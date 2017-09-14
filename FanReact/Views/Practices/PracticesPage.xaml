@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="FanReact.PracticesPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="searchButton"
+                     Activated="OnSearchClicked"/>
+    </ContentPage.ToolbarItems>
+    
+	   
+        <ListView ItemsSource="{Binding Weeks}">
+
+            <ListView.Footer>
+                <Button x:Name="exitButton"
+                        Text="EXIT USING COACH TOOLS                                       >" 
+                        TextColor="White" 
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        HeightRequest="35"
+                        VerticalOptions="EndAndExpand"
+                        BorderRadius="0"
+                        Clicked="OnExitClicked"/>
+                        <!-- Tool icon image -->  
+            </ListView.Footer>
+
+            <ListView.Header>
+                <StackLayout>
+                    <Button Text="My Library"
+                            Clicked="OnMyLibraryClicked"/>
+                            <!-- button star icon -->
+                    <Button Text="Practice Notes"
+                            Clicked="OnPracticeNotesClicked"/>
+                            <!-- button notes icon -->
+                </StackLayout>
+            </ListView.Header>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source=""
+                                   Grid.Column="0"/>
+
+                            <Label Text="{Binding Week}"
+                                   Grid.Column="1" />
+
+                            <Label Text=">" TextColor="DarkBlue"
+                                   Grid.Column="3" />
+                            
+                        </Grid>
+                        
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+    
+</ContentPage>

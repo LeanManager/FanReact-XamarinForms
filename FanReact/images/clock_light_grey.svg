@@ -1,0 +1,25 @@
+
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Web---HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home---Messaging" transform="translate(-210.000000, -396.000000)" fill="#999999">
+            <g id="Primary-Column" transform="translate(20.000000, 66.000000)">
+                <g id="Feed" transform="translate(0.000000, 129.000000)">
+                    <g id="Post-Row---Link">
+                        <g id="Meta" transform="translate(190.000000, 180.000000)">
+                            <g id="Deets" transform="translate(0.000000, 20.000000)">
+                                <g id="Age">
+                                    <g id="Clock">
+                                        <g id="Clock-Icon" transform="translate(0.000000, 1.000000)">
+                                            <path d="M6.5,0 C2.9159,0 0,2.9159 0,6.5 C0,10.0841 2.9159,13 6.5,13 C10.0841,13 13,10.0841 13,6.5 C13,2.9159 10.0841,0 6.5,0 M6.5,1.3 C9.36715,1.3 11.7,3.63285 11.7,6.5 C11.7,9.36715 9.36715,11.7 6.5,11.7 C3.63285,11.7 1.3,9.36715 1.3,6.5 C1.3,3.63285 3.63285,1.3 6.5,1.3" id="Fill-1"></path>
+                                            <polygon id="Fill-3" points="2.946905 4.504955 3.851055 3.600805 6.481605 6.231355 8.003255 4.710355 8.907405 5.614505 6.481605 8.039655"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

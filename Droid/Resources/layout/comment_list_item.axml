@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding_medium_mid">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <XamSvg.SvgImageView
+                    android:id="@+id/commentThreadToggle"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="8dp"
+                    android:layout_width="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center"
+                    android:rotation="90"
+                    app:svg="res:arrow_right_small.svg" />
+                <TextView
+                    android:id="@+id/tvUserHandle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/Upward_darkBlue" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <XamSvg.SvgImageView
+                android:id="@+id/timeIcon"
+                android:layout_height="12dp"
+                android:layout_width="12dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                app:svg="res:clock_light_grey.svg" />
+            <TextView
+                android:id="@+id/timeStringTextview"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:paddingEnd="@dimen/padding_statistics_item"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+            <FrameLayout
+                android:id="@+id/flOverflowMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+                <XamSvg.SvgImageView
+                    android:layout_height="4dp"
+                    android:layout_width="16dp"
+                    android:layout_gravity="center"
+                    app:svg="res:more_light_grey.svg" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/llHeader"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/tvComment"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <XamSvg.SvgImageView
+                android:id="@+id/svgHypeIcon"
+                android:layout_height="18dp"
+                android:layout_width="18dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                app:svg="res:hype_light_grey.svg" />
+            <TextView
+                android:id="@+id/tvHypeScore"
+                android:layout_toEndOf="@+id/svgHypeIcon"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:paddingEnd="@dimen/padding_statistics_item"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

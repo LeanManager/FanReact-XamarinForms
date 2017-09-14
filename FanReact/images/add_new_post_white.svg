@@ -1,0 +1,15 @@
+
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Headers/Header-HD-(Logged-In)" transform="translate(-630.000000, -11.000000)" fill="#FFFFFF">
+            <g id="Header-HD-(Logged-In)">
+                <g id="Add-New" transform="translate(617.000000, 0.000000)">
+                    <g id="Add-New-Icon" transform="translate(13.000000, 11.000000)">
+                        <path d="M0,0 L0,24 L5,20.001 L20,20.001 L20,0 L0,0 Z M2,2.001 L18,2.001 L18,18 L4.298,18 L2,19.84 L2,2.001 Z" id="Fill-1"></path>
+                        <polygon id="Fill-2" points="15 9 11 9 11 5 9 5 9 9 5 9 5 11 9 11 9 15 11 15 11 11 15 11"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

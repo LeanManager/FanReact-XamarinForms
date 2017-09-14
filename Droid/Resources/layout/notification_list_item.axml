@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="?attr/selectableItemBackground">
+    <TextView
+        android:id="@+id/notifHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+    <RelativeLayout
+        android:id="@+id/notifImageContainer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/notifHandle"
+        android:layout_alignParentStart="true"
+        android:paddingEnd="8dp">
+        <ImageView
+            android:id="@+id/notifImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/notifHandle"
+        android:layout_toEndOf="@+id/notifImageContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/notifMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TitleText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/notifTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notifMessage"
+            android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:id="@+id/notifButtonPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/notifTime">
+            <Button
+                android:id="@+id/notifLeftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/NotificationGreenButton" />
+            <Button
+                android:id="@+id/notifRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/NotificationRedButton" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/cell_separator" />
+    </RelativeLayout>
+</RelativeLayout>

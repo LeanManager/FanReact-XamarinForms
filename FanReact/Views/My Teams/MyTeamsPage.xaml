@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:FanReact;assembly=FanReact"
+             x:Class="FanReact.MyTeamsPage"
+             Title="My Teams"
+             x:Name="myTeamsPage"
+             BindingContext="{Binding Source={x:Static Application.Current},
+                                      Path=ViewModel}">
+
+    <StackLayout x:Name="mainStack"
+                 Spacing="0"
+                 Padding="0,0,0,0">
+
+        <local:TabbedView x:Name="tabbedView"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           HeightRequest="44"/>
+
+        <ListView x:Name="listView"
+                  ItemsSource="{Binding Teams}"
+                  HasUnevenRows="True"
+                  ItemTapped="OnTeamItemTapped"
+                  SeparatorVisibility="None"
+                  BackgroundColor="White">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Padding="0">
+                       <StackLayout Padding="0"
+                                    Spacing="0">
+                        <StackLayout Orientation="Horizontal">
+                             <Image WidthRequest="40"
+                                    Aspect="AspectFill"
+                                    IsVisible="true"    
+                                    Source="{local:ImageResource FanReact.images.football1.png}" />
+                                    <!-- Bind IsVisible ; no binding to Icon because it's the same - just load statically -->
+                                    <!-- Source="{Binding Icon, Converter={StaticResource imageResourceCvt}" -->
+                             <Label Text="{Binding Name}"
+                                    VerticalOptions="Center"
+                                    FontSize="Small"
+                                    FontAttributes="Bold"/>
+                             <Label Text="{Binding Years}"
+                                    VerticalOptions="Center"
+                                    FontSize="Micro"
+                                    FontAttributes="Bold"
+                                    TextColor="Gray" />
+                             <Button Text=">"
+                                     TextColor="Black"
+                                     FontSize="Large"
+                                     FontAttributes="Bold"
+                                     HorizontalOptions="EndAndExpand"
+                                     VerticalOptions="Start"
+                                     CommandParameter="{Binding .}" 
+                                     Clicked="OnTeamItemButtonClicked" >
+              
+                             </Button>
+                        </StackLayout>
+                          <Label Text="                V DETAILS"
+                                 x:Name="detailsLabel"   
+                                 FontAttributes="Bold"
+                                 HeightRequest="10"   
+                                 HorizontalOptions="Start"
+                                 FontSize="Micro"
+                                 TextColor="Accent"
+                                 IsVisible="{Binding DetailsLabelVisibility}" /> 
+                                <!-- Bind IsVisible -->
+                       </StackLayout>
+                            
+                        <StackLayout x:Name="detailsStack"
+                                     IsVisible="{Binding IsVisible}"
+                                     Margin="0,0,0,10">
+                            <Label Text="                DIVISION"
+                                   TextColor="Gray"
+                                   FontSize="Micro"
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding Division, StringFormat='               {0}'}"
+                                   FontSize="Micro"/>
+                                
+                            <Label Text="                PROGRAM"
+                                   TextColor="Gray"
+                                   FontSize="Micro"
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding Program, StringFormat='               {0}'}"
+                                   FontSize="Micro"/>    
+                                
+                            <Label Text="                CHURCH"
+                                   TextColor="Gray"
+                                   FontSize="Micro" 
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding Church, StringFormat='               {0}'}"
+                                   FontSize="Micro"/>    
+                                
+                            <Label Text="                ^ LESS"  
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="Start"
+                                   FontSize="Micro"
+                                   TextColor="Accent" />
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+    <Label x:Name="grayLabel"
+           Text=""
+           VerticalOptions="FillAndExpand"
+           HorizontalOptions="Fill"
+           HeightRequest="190"/>
+            
+    <Button x:Name="exitButton1"
+            Text="EXIT USING COACH TOOLS                                       >" 
+            TextColor="White" 
+            FontAttributes="Bold"
+            FontSize="Small"
+            HeightRequest="35"
+            VerticalOptions="EndAndExpand"
+            BorderRadius="0" 
+            Clicked="OnExitClicked"/>
+    <!-- Tool icon image -->  
+
+        <!--<Label
+            Text="EXIT USING COACH TOOLS                                       >" 
+            TextColor="White" 
+            FontAttributes="Bold"
+            FontSize="Small"
+            HeightRequest="35"
+            VerticalOptions="EndAndExpand">
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnExitClicked"/>
+            </Label.GestureRecognizers>
+
+        </Label>-->
+        
+    </StackLayout>
+    
+</ContentPage>

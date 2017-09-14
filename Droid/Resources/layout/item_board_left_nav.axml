@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linkItem"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+	android:layout_marginBottom="@dimen/padding_medium_mid">
+    <ImageView
+        android:id="@+id/linkIcon"
+        android:layout_height="@dimen/upward_board_intro_quickfact_icon_size"
+        android:layout_width="match_parent"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/linkLabel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/linkIcon"
+        style="@style/BoardQuickFactsLabel"
+        android:text="Programs" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="primary">#00604f</color>
+    <color name="primaryDark">#003527</color>
+    <color name="accent">#455fa9</color>
+    <color name="window_background">#F5F5F5</color>
+    <color name="splash_background">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="secondaryWhite">#A4FAFAFA</color>
+    <color name="textColor">#444444</color>
+    <color name="lightTextColor">#8A000000</color>
+    <color name="separatorGray">#E0DFDC</color>
+    <color name="UpVote">#339933</color>
+    <color name="DownVote">#cc0000</color>
+    <color name="black">#000000</color>
+
+    <color name="medium_gray">#444444</color>
+    <color name="black_60_percent">#96000000</color>
+
+    <color name="button_muted_grey">#DDDDDD</color>
+    <color name="button_green">#7AA131</color>
+    <color name="button_red">#C65B23</color>
+
+    <color name="background_gray">#eeeeee</color>
+
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+
+    <!--Other social media	-->
+    <color name="facebook_blue">#355F9F</color>
+    <color name="twitter_blue">#2CA9E0</color>
+
+    <!--UPWARD	-->
+    <color name="Upward_darkBlue">#035688</color>
+    <color name="Upward_darkPurple">#48259D</color>
+  
+    <color name="Upward_hype_color">#C44B08</color>
+    <color name="Upward_grey_bg">#F6F6F6</color>
+    <color name="Upward_light_gray">#DDDDDD</color>
+    <color name="Upward_dark_grey">#999999</color>
+    <color name="Upward_medium_gray">#444444</color>
+    <color name="Upward_red">#7A232E</color>
+    <color name="Upward_register_green">#008200</color>
+    <color name="Upward_register_disabled_green">#99cd99</color>
+    <color name="Upward_accent">#D0021B</color>
+    <color name="Upward_EditProfile_background">#EEEEEE</color>
+    <color name="Upward_ContactWizard_SelectedType">@color/Upward_darkPurple</color>
+    <color name="Upward_heating_up">#F5A623</color>
+    <color name="Upward_on_fire">#C44B08</color>
+    <color name="Upward_darkBlue_30">#77035688</color>
+
+    <color name="Upward_about_category_1">@color/Upward_red</color>
+    <color name="Upward_text_normal">@color/Upward_medium_gray</color>
+    <color name="Upward_text_link">@color/Upward_darkBlue</color>
+
+</resources>

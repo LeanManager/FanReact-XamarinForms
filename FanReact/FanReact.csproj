@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E20EC87A-83AC-4538-841E-26ABA0635157}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FanReact</RootNamespace>
+    <AssemblyName>FanReact</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationObjects\AppContainer.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="Utilities\ColorCodes.cs" />
+    <Compile Include="Utilities\EnumUtils.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\NativeNavigationModel.cs" />
+    <Compile Include="Utilities\NativeNavigation.cs" />
+    <Compile Include="Interfaces\IAppNavigation.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="ViewModels\MyTeamsViewModel.cs" />
+    <Compile Include="Models\Team.cs" />
+    <Compile Include="Utilities\SegmentControl.cs" />
+    <Compile Include="Converters\ImageResourceConverter.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Coach.cs" />
+    <Compile Include="ViewModels\TeamRosterViewModel.cs" />
+    <Compile Include="CustomRenderers\TabbedView.cs" />
+    <Compile Include="Converters\ImageResourceExtension.cs" />
+    <Compile Include="MovableListView\MovableViewCell.cs" />
+    <Compile Include="MovableListView\ReorderCommandParam.cs" />
+    <Compile Include="MovableListView\ObservableCollectionEx.cs" />
+    <Compile Include="MovableListView\IObservableCollectionEx.cs" />
+    <Compile Include="Views\CoachToolsTabbedPage.xaml.cs">
+      <DependentUpon>CoachToolsTabbedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\PracticesViewModel.cs" />
+    <Compile Include="Views\Roster\EditPlayerPage.xaml.cs">
+      <DependentUpon>EditPlayerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Roster\TeamRosterPage.xaml.cs" />
+    <Compile Include="Views\Practices\PracticesPage.xaml.cs">
+      <DependentUpon>PracticesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Practices\MyLibraryPage.xaml.cs">
+      <DependentUpon>MyLibraryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Roster\PlayerProfilePage.xaml.cs">
+      <DependentUpon>PlayerProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\My Teams\MyTeamsPage.xaml.cs" />
+    <Compile Include="Views\Game Day\GameDayPage.xaml.cs">
+      <DependentUpon>GameDayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Game Day\GamedayCoinTossPage.xaml.cs">
+      <DependentUpon>GamedayCoinTossPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Game Day\GamedayAllGamesPage.xaml.cs">
+      <DependentUpon>GamedayAllGamesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Practices\PracticeNotesPage.xaml.cs">
+      <DependentUpon>PracticeNotesPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApplicationObjects\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="images\" />
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Models\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Converters\" />
+    <Folder Include="CustomRenderers\" />
+    <Folder Include="MovableListView\" />
+    <Folder Include="Views\Practices\" />
+    <Folder Include="Views\Roster\" />
+    <Folder Include="Views\Game Day\" />
+    <Folder Include="Views\My Teams\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="XLabs.Ioc">
+      <HintPath>..\packages\XLabs.IoC.2.0.5782\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\XLabs.Ioc.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Ioc.Autofac">
+      <HintPath>..\packages\XLabs.IoC.Autofac.2.0.5782\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.2.0.0\lib\netstandard1.1\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="ModernHttpClient">
+      <HintPath>..\packages\modernhttpclient.2.4.2\lib\Portable-Net45+WinRT45+WP8+WPA81\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="XamSvg.Shared">
+      <HintPath>..\packages\Softlion.XamSvg.2.3.4.4\lib\portable-win8+net45+wpa81+MonoAndroid44+Xamarin.iOS10\XamSvg.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.3.0.0.100-embeddingpreview\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.3.0.0.100-embeddingpreview\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.3.0.0.100-embeddingpreview\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="images\basketball_grey_large.svg" />
+    <None Include="images\volleyball_grey_large.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\add.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="images\location_grey.svg" />
+    <EmbeddedResource Include="images\volunteer_grey.svg" />
+    <EmbeddedResource Include="images\about_grey.svg" />
+    <EmbeddedResource Include="images\add_image.svg" />
+    <EmbeddedResource Include="images\add_link.svg" />
+    <EmbeddedResource Include="images\add_new_post_fab.svg" />
+    <EmbeddedResource Include="images\add_new_post_white.svg" />
+    <EmbeddedResource Include="images\add_website.svg" />
+    <EmbeddedResource Include="images\arrow_right_grey_large.svg" />
+    <EmbeddedResource Include="images\arrow_right_small.svg" />
+    <EmbeddedResource Include="images\arrow_right_white_small.svg" />
+    <EmbeddedResource Include="images\boards_managed.svg" />
+    <EmbeddedResource Include="images\camera_white.svg" />
+    <EmbeddedResource Include="images\check_mark_white.svg" />
+    <EmbeddedResource Include="images\clock_light_grey.svg" />
+    <EmbeddedResource Include="images\close.svg" />
+    <EmbeddedResource Include="images\close_white.svg" />
+    <EmbeddedResource Include="images\comments_light_grey.svg" />
+    <EmbeddedResource Include="images\contact_grey.svg" />
+    <EmbeddedResource Include="images\contact_light_grey.svg" />
+    <EmbeddedResource Include="images\copy_large.svg" />
+    <EmbeddedResource Include="images\copy_white.svg" />
+    <EmbeddedResource Include="images\document_white.svg" />
+    <EmbeddedResource Include="images\donate_grey.svg" />
+    <EmbeddedResource Include="images\edit.svg" />
+    <EmbeddedResource Include="images\facebook.svg" />
+    <EmbeddedResource Include="images\facebook_f_white.svg" />
+    <EmbeddedResource Include="images\hype_light_grey.svg" />
+    <EmbeddedResource Include="images\info.svg" />
+    <EmbeddedResource Include="images\leagues.svg" />
+    <EmbeddedResource Include="images\link_large.svg" />
+    <EmbeddedResource Include="images\link_light_grey_small.svg" />
+    <EmbeddedResource Include="images\members_light_grey.svg" />
+    <EmbeddedResource Include="images\menu_white.svg" />
+    <EmbeddedResource Include="images\messaging_white.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="images\more_light_grey.svg" />
+    <EmbeddedResource Include="images\my_boards.svg" />
+    <EmbeddedResource Include="images\notifications_white.svg" />
+    <EmbeddedResource Include="images\photo_large.svg" />
+    <EmbeddedResource Include="images\play.svg" />
+    <EmbeddedResource Include="images\private_icon.svg" />
+    <EmbeddedResource Include="images\profile_empty.svg" />
+    <EmbeddedResource Include="images\profile_light_grey.svg" />
+    <EmbeddedResource Include="images\public_icon.svg" />
+    <EmbeddedResource Include="images\quick_post_grey.svg" />
+    <EmbeddedResource Include="images\roster.svg" />
+    <EmbeddedResource Include="images\search.svg" />
+    <EmbeddedResource Include="images\search_white_left.svg" />
+    <EmbeddedResource Include="images\settings_grey.svg" />
+    <EmbeddedResource Include="images\share_light_grey.svg" />
+    <EmbeddedResource Include="images\swap.svg" />
+    <EmbeddedResource Include="images\twitter_white.svg" />
+    <EmbeddedResource Include="images\upward_logo.svg" />
+    <EmbeddedResource Include="images\upward_star_white.svg" />
+    <EmbeddedResource Include="images\warning_error.svg" />
+    <EmbeddedResource Include="images\website_light_grey.svg" />
+    <EmbeddedResource Include="images\x_grey.svg" />
+    <EmbeddedResource Include="images\camera_large.svg" />
+    <EmbeddedResource Include="images\about_med.svg" />
+    <EmbeddedResource Include="images\athletes_med.svg" />
+    <EmbeddedResource Include="images\cell_phone_med.svg" />
+    <EmbeddedResource Include="images\home_tab_bar.svg" />
+    <EmbeddedResource Include="images\messages_tab_bar.svg" />
+    <EmbeddedResource Include="images\notes_med.svg" />
+    <EmbeddedResource Include="images\programs_med.svg" />
+    <EmbeddedResource Include="images\resources_med.svg" />
+    <EmbeddedResource Include="images\schedule_med.svg" />
+    <EmbeddedResource Include="images\teams_med.svg" />
+    <EmbeddedResource Include="images\tools_med.svg" />
+    <EmbeddedResource Include="images\facilities_med.svg" />
+    <EmbeddedResource Include="images\invite_med.svg" />
+    <EmbeddedResource Include="images\add_new_fab.svg" />
+    <EmbeddedResource Include="images\upward_logo_white.svg" />
+    <EmbeddedResource Include="images\arrow_right_large.svg" />
+    <EmbeddedResource Include="images\react_btn.svg" />
+    <EmbeddedResource Include="images\football.jpg" />
+    <EmbeddedResource Include="images\football1.png" />
+    <EmbeddedResource Include="images\redstar.png" />
+    <EmbeddedResource Include="Views\CoachToolsTabbedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Roster\EditPlayerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Roster\TeamRosterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <LogicalName>FanReact.TeamRosterPage.xaml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Practices\PracticesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Practices\MyLibraryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Roster\PlayerProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\My Teams\MyTeamsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <LogicalName>FanReact.MyTeamsPage.xaml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Game Day\GameDayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Game Day\GamedayCoinTossPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Game Day\GamedayAllGamesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Practices\PracticeNotesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.3.0.0.100-embeddingpreview\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.0.0.100-embeddingpreview\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

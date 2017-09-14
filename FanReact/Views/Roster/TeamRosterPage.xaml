@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:FanReact;assembly=FanReact"
+             x:Class="FanReact.TeamRosterPage"
+             Title="Team Roster">
+
+    <!--<ContentPage.Resources>
+      <ResourceDictionary>
+        <local:ImageResourceConverter x:Key="imageResourceCvt" />
+      </ResourceDictionary>
+    </ContentPage.Resources>-->
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="saveToolbarButton" 
+                     Text="Save" 
+                     IsEnabled="false" />
+        <!--<ToolbarItem x:Name="backButton"
+                     Activated="OnBackClicked"/>-->
+    </ContentPage.ToolbarItems>
+
+  <ScrollView>
+    <StackLayout x:Name="stackLayout"
+                 Spacing="5">
+
+        <Label x:Name="headerLabel"
+               Text="{Binding Name}"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="White"
+               VerticalOptions="Start"
+               HorizontalOptions="Fill"
+               HeightRequest="80"
+               BackgroundColor="Olive" />
+
+        <Label Text=""
+               HeightRequest="5"/>
+
+        <StackLayout Orientation="Horizontal"
+                     Spacing="20"
+                     Padding="10,0,0,0">
+            <Label Text="CURRENT WEEK"
+                   TextColor="Gray"
+                   FontSize="Micro"
+                   FontAttributes="Bold"/>
+            <Label Text="CHURCH"
+                   TextColor="Gray"
+                   FontSize="Micro"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal"
+                     Spacing="70"
+                     Padding="10,0,0,0">
+            <Label Text="{Binding CurrentWeek}"
+                   TextColor="Black"
+                   FontSize="Small"/>
+            <Label Text="{Binding Church}"
+                   TextColor="Black"
+                   FontSize="Small"/>
+        </StackLayout>
+
+        <Label Text=""
+               HeightRequest="15"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Image WidthRequest="55"
+                   Aspect="AspectFill"   
+                   Source="{local:ImageResource FanReact.images.football1.png}" />
+                <!-- Source="{Binding Icon, Converter={StaticResource imageResourceCvt}" -->
+            <StackLayout>
+                <Label Text="{Binding Program}"
+                       FontAttributes="Bold"
+                       FontSize="Small"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding Years}"
+                           TextColor="Gray"
+                           FontAttributes="Bold"
+                           FontSize="Micro"/>
+                    <Label Text="*"
+                           TextColor="Gray"
+                           FontAttributes="Bold"
+                           FontSize="Micro"/>
+                    <Label Text="{Binding Division}"
+                           TextColor="Gray"
+                           FontAttributes="Bold"
+                           FontSize="Micro"/>
+                    <!-- do StringFormat in the Binding for this Label ^ -->
+                </StackLayout>
+            </StackLayout>     
+        </StackLayout>
+
+        <!--<Label Text=""
+               HeightRequest="5"/>-->
+
+        <StackLayout Orientation="Horizontal"
+                     Padding="10,0,15,0">
+            <Label Text="Team Roster"
+                   FontAttributes="Bold"
+                   TextColor="Maroon"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalTextAlignment="Center"/>
+            <Button Text="REORDER"
+                    TextColor="DarkBlue"
+                    FontAttributes="Bold"
+                    FontSize="Micro"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="OnReorderClicked"/>
+            <!-- Needs an icon image ^ -->
+        </StackLayout>
+
+        <Label FontSize="Micro" TextColor="Gray" FontAttributes="Bold" HeightRequest="10" 
+               VerticalOptions="End" VerticalTextAlignment="End"
+               Text="     NAME                                   RANK         JERSEY NO." /> 
+
+        <ListView x:Name ="playerListView" HeightRequest="520" 
+                  ItemsSource="{Binding Players}"
+                  ItemSelected="OnPlayerItemSelected"
+                  ItemTapped="OnPlayerItemTapped">
+            <!-- Use an Effect to customize the Separator property (extend all the way to the edge of the screen) -->
+
+            <ListView.Header>
+                <Label Text="   __________________________________________________" VerticalTextAlignment="End"/>
+            </ListView.Header>
+            
+            <ListView.Footer>
+                  <Label Text=""/>
+            </ListView.Footer>
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <local:MovableViewCell>
+
+                        <Grid Padding="17,12,15,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding PlayerName}" FontSize="Small" FontAttributes="Bold"
+                                   Grid.Row="0" Grid.Column="0"/>
+                            <Label Text="{Binding Rank}" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="End"
+                                   Grid.Row="0" Grid.Column="1"/>
+                            <Label Text="{Binding JerseyNumber}" FontSize="Small" HorizontalTextAlignment="End"
+                                   Grid.Row="0" Grid.Column="2"/>
+                            <Label Text=">" TextColor="DarkBlue" FontAttributes="Bold" FontSize="Small" HorizontalTextAlignment="End"
+                                   Grid.Row="0" Grid.Column="3"/>
+                        </Grid>
+                    
+                    </local:MovableViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+                             
+        <StackLayout Spacing="20"
+                     Padding="15,0,15,0">    
+            <Button Text="SEND NOTIFICATION TO GUARDIANS"
+                    FontSize="Micro"
+                    TextColor="DarkBlue"
+                    FontAttributes="Bold"
+                    BorderRadius="0"
+                    BorderColor="DarkBlue"
+                    BorderWidth="2"
+                    HeightRequest="50"
+                    WidthRequest="260"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"/>
+
+            <Label Text="Coaches" TextColor="DarkRed" FontAttributes="Bold"
+                   WidthRequest="100" VerticalTextAlignment="End"/>
+                
+        </StackLayout> 
+
+        <ListView x:Name="coachList" HeightRequest="110" ItemsSource="{Binding Coaches}"
+                  ItemSelected="OnCoachItemSelected">
+
+            <ListView.Header>
+            <Label Text="   __________________________________________________" 
+                   VerticalTextAlignment="End"/>
+            </ListView.Header>
+                
+            <ListView.Footer>
+                <Label Text="" />      
+            </ListView.Footer>    
+                
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="17,0,15,0">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>    
+                            </Grid.ColumnDefinitions>
+                                
+                            <Label Text="{Binding CoachName}" FontSize="Small" FontAttributes="Bold"
+                                   VerticalOptions="Center" Grid.Column="0" />
+                                
+                            <Button Text="X" FontAttributes="Bold" FontSize="Large" TextColor="DarkRed" 
+                                    VerticalOptions="Start" HorizontalOptions="EndAndExpand" Grid.Column="1"
+                                    Clicked="OnDeleteAssistantCoachClicked" 
+                                    IsVisible="{Binding IsAssistantCoach}" IsEnabled="{Binding IsAssistantCoach}"/>
+                        </Grid>        
+                    </ViewCell>        
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView> 
+
+        <StackLayout Padding="0">    
+            <Button Text="     ADD ASSISTANT COACH                                              >"
+                    TextColor="DarkBlue" FontSize="Small" FontAttributes="Bold"
+                    VerticalOptions="Fill" HorizontalOptions="Start"
+                    Clicked="OnAddAssistantCoachClicked"/>
+            <Button x:Name="exitButton2" BorderRadius="0"
+                    Text="EXIT USING COACH TOOLS                                       >" 
+                    TextColor="White" FontAttributes="Bold" FontSize="Small" HeightRequest="35"
+                    BackgroundColor="Purple" HorizontalOptions="Fill"
+                    Clicked="OnExitCoachToolsClicked"/>
+                    <!-- Tool icon image -->    
+        </StackLayout> 
+            
+    </StackLayout>
+  </ScrollView>
+    
+</ContentPage>

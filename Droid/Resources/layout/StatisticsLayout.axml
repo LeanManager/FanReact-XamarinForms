@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/statisticsView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+<!--<ImageView
+        android:layout_alignParentStart="true"
+        android:id="@+id/timeIcon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center" />-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+        <XamSvg.SvgImageView
+            android:id="@+id/timeIcon"
+            android:layout_alignParentStart="true"
+            android:layout_height="12dp"
+            android:layout_width="12dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            app:svg="res:clock_light_grey.svg" />
+        <TextView
+            android:id="@+id/timeStringTextview"
+            android:layout_toEndOf="@+id/timeIcon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:paddingEnd="@dimen/padding_statistics_item"
+            android:textSize="10sp" />
+    <!--<ImageView
+            android:id="@+id/eyeIcon"
+            android:layout_toEndOf="@+id/timeStringTextview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="@dimen/padding_statistics_item"
+            android:layout_gravity="center" />-->
+        <XamSvg.SvgImageView
+            android:id="@+id/svgHypeIcon"
+            android:layout_toEndOf="@+id/timeStringTextview"
+            android:layout_height="12dp"
+            android:layout_width="12dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            app:svg="res:hype_light_grey.svg" />
+        <TextView
+            android:id="@+id/tvHypeScore"
+            android:layout_toEndOf="@+id/svgHypeIcon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:paddingEnd="@dimen/padding_statistics_item"
+            android:textSize="10sp" />
+        <ImageView
+            android:id="@+id/commentsIcon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="@dimen/padding_statistics_item"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/commentCountTextview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:paddingEnd="@dimen/padding_statistics_item"
+            android:textSize="10sp" />
+    </LinearLayout>
+<!--  <ImageView
+        android:id="@+id/commentsIcon"
+        android:layout_toEndOf="@+id/viewCountTextview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:paddingStart="@dimen/padding_statistics_item"
+        android:layout_gravity="center" />-->
+</RelativeLayout>

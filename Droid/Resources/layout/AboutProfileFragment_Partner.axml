@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/about"
+            style="@style/UpwardAbout.Title"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@android:color/white">
+            <TextView
+                android:id="@+id/tvShortBio"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/overview"
+                style="@style/UpwardAbout.Category1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" />
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvProfileUrls"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/church_information"
+                style="@style/UpwardAbout.Category1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/church_main_contact"
+                style="@style/UpwardAbout.Category2" />
+            <TextView
+                android:id="@+id/tvMainContactName"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text" />
+            <TextView
+                android:id="@+id/tvMainContactEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text.Link" />
+            <TextView
+                android:id="@+id/tvMainContactPhone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/denomination"
+                style="@style/UpwardAbout.Category2" />
+            <TextView
+                android:id="@+id/tvDenomination"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/church_size"
+                style="@style/UpwardAbout.Category2" />
+            <TextView
+                android:id="@+id/tvChurchSize"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/worship_times"
+                style="@style/UpwardAbout.Category2"
+                android:visibility="gone" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvWorshipTimes"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

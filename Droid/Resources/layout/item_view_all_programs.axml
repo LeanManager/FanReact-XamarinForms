@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="46sp"
+    android:gravity="end"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:id="@+id/rlViewAllPrograms"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackgroundBorderless">
+        <TextView
+            android:id="@+id/tvViewAllPrograms"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="@string/view_all_programs"
+            android:gravity="center_vertical"
+            style="@style/UpwardTextAppearance_BlueBoldCapital" />
+    <!--<FrameLayout
+            android:layout_height="9dp"
+            android:layout_width="6dp"
+            android:layout_toEndOf="@+id/tvViewAllPrograms"
+            android:layout_gravity="center_vertical">
+            <XamSvg.SvgImageView
+                app:svg="res:arrow_right_small.svg"
+                android:layout_height="9dp"
+                android:layout_width="6dp"
+                android:foregroundGravity="center_vertical"/>
+        </FrameLayout>-->
+    </RelativeLayout>
+    <include
+        layout="@layout/cell_separator" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvRecipientsIntro"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding_medium_large"
+        android:background="@color/Upward_grey_bg" />
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/etProfileSearch"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding_medium_large"
+            android:hint="@string/search_hint"
+            android:singleLine="true"
+            android:maxLines="1" />
+        <Button
+            android:id="@+id/bClearText"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:backgroundTint="@android:color/black"
+            android:layout_marginEnd="@dimen/padding_medium"
+            android:layout_gravity="center_vertical|end" />
+    </FrameLayout>
+<!--<EditText
+            android:id="@+id/etProfileSearch"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding_medium_large"
+            android:hint="@string/search_hint"
+            android:singleLine="true"
+            android:maxLines="1"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvRecipientRoles"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+</LinearLayout>

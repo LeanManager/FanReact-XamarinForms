@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="@dimen/intro_view_image_height"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:theme="@style/UpwardTextTheme"
+    style="@style/BoardQuickfactsPanel">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_view_image_height">
+        <ImageView
+            android:id="@+id/boardIntroImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/textContainer1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp">
+        <TextView
+            android:id="@+id/textContainer1_stat"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            tools:text="400" />
+        <TextView
+            android:id="@+id/textContainer1_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/textContainer1_stat"
+            style="@style/BoardQuickFactsLabel"
+            android:text="Hype score" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/textContainer2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp">
+        <TextView
+            android:id="@+id/textContainer2_stat"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            tools:text="104" />
+        <TextView
+            android:id="@+id/textContainer2_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/textContainer2_stat"
+            style="@style/BoardQuickFactsLabel"
+            android:text="Fans of" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/textContainer3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp">
+        <TextView
+            android:id="@+id/textContainer3_stat"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            tools:text="200" />
+        <TextView
+            android:id="@+id/textContainer3_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/textContainer3_stat"
+            style="@style/BoardQuickFactsLabel"
+            android:text="Fans" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/board_quickfacts_recyclerview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+<!--<RelativeLayout
+        android:id="@+id/iconContainer1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp"
+        android:background="?android:attr/selectableItemBackground">
+        <RelativeLayout
+            android:id="@+id/iconContainer1_icon"
+            android:layout_height="@dimen/upward_board_intro_quickfact_icon_size"
+            android:layout_width="match_parent"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/iconContainer1_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/iconContainer1_icon"
+            style="@style/BoardQuickFactsLabel"
+            android:text="Profile" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/iconContainer2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp"
+        android:background="?android:attr/selectableItemBackground">
+        <RelativeLayout
+            android:id="@+id/iconContainer2_icon"
+            android:layout_height="@dimen/upward_board_intro_quickfact_icon_size"
+            android:layout_width="match_parent"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/iconContainer2_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/iconContainer2_icon"
+            style="@style/BoardQuickFactsLabel"
+            android:text="Schedule" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/iconContainer3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="12dp"
+        android:background="?android:attr/selectableItemBackground">
+        <RelativeLayout
+            android:id="@+id/iconContainer3_icon"
+            android:layout_height="@dimen/upward_board_intro_quickfact_icon_size"
+            android:layout_width="match_parent"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/iconContainer3_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/iconContainer3_icon"
+            style="@style/BoardQuickFactsLabel"
+            android:text="Programs" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/iconContainer4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?android:attr/selectableItemBackground">
+        <RelativeLayout
+            android:id="@+id/iconContainer4_icon"
+            android:layout_height="@dimen/upward_board_intro_quickfact_icon_size"
+            android:layout_width="match_parent"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/iconContainer4_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_below="@+id/iconContainer4_icon"
+            style="@style/BoardQuickFactsLabel"
+            android:text="Programs" />
+    </RelativeLayout>-->
+</LinearLayout>

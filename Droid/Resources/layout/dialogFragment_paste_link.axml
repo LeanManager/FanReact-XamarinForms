@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Upward_grey_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_report">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attach_link"
+            android:gravity="center"
+            style="@style/UpwardTextAppearance_BlueBold"
+            android:layout_alignParentStart="true" />
+        <xamsvg.SvgImageView
+            android:id="@+id/svgClose"
+            app:svg="res:close_white.svg"
+            android:layout_height="24dp"
+            android:layout_width="24dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+        <EditText
+            android:id="@+id/etLink"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="http://"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:inputType="textUri"
+            android:imeOptions="actionSearch"
+            android:layout_marginBottom="@dimen/padding_medium_large" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/preview"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginBottom="@dimen/padding_medium_large" />
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <include
+                layout="@layout/item_link_preview" />
+        </FrameLayout>
+    </LinearLayout>
+    <View
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/bAddLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_link"
+        android:layout_gravity="bottom|end"
+        android:padding="@dimen/padding_report"
+        android:theme="@style/UpwardBlueButton" />
+</LinearLayout>

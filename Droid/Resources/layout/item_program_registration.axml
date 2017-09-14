@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_medium"
+    android:paddingBottom="@dimen/padding_medium"
+    android:paddingLeft="@dimen/padding_medium"
+    android:paddingRight="@dimen/padding_medium"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/ivProgramIcon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="@dimen/padding_medium"
+        android:src="@android:drawable/ic_menu_recent_history" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/UpwardTextAppearance_BlueBold"
+            android:text="Basketball Camp" />
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/UpwardTextAppearance_GrayText_Small"
+            android:textAllCaps="true"
+            android:paddingBottom="@dimen/padding_minor"
+            android:text="k5 - 2nd" />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/padding_medium"
+            android:text="Opened: Apr. 12, 2017" />
+        <TextView
+            android:id="@+id/tvVolunteer"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAllCaps="true"
+            style="@style/UpwardTextAppearance_BlueBold_Small"
+            android:text="Volunteer" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rlRegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/large_button_height"
+        style="@style/register_button"
+        android:padding="@dimen/padding_medium"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/registerButton_text"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/register"
+            android:textAllCaps="true" />
+    <!--<ImageView
+            android:id="@+id/registerButton_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/registerButton_text"
+            android:paddingStart="@dimen/padding_tiny" />-->
+        <RelativeLayout
+            android:id="@+id/registerButton_icon"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/registerButton_text"
+            android:paddingStart="@dimen/padding_minor"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+    <include
+        layout="@layout/cell_separator" />
+</LinearLayout>

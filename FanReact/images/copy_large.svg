@@ -1,0 +1,17 @@
+
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Web---HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modal---Share---Copy-Link" transform="translate(-253.000000, -112.000000)" fill="#035688">
+            <g id="Main-Content" transform="translate(100.000000, 86.000000)">
+                <g id="main-icon" transform="translate(127.000000, 0.000000)">
+                    <g id="Page-1" transform="translate(26.000000, 26.000000)">
+                        <polygon id="Fill-1" points="0 36.5322 5.867 36.5322 5.867 34.5002 0 34.5002"></polygon>
+                        <polygon id="Fill-2" points="0 28.8652 2.034 28.8652 2.034 19.1662 0 19.1662"></polygon>
+                        <polygon id="Fill-3" points="0 0.0002 0 13.5322 2.034 13.5322 2.034 2.0322 9.7 2.0322 9.7 0.0002"></polygon>
+                        <path d="M15.3333,0.0002 L15.3333,2.0322 L23.0003,2.0322 L23.0003,7.6662 L19.1673,7.6662 L19.1673,34.5002 L11.5003,34.5002 L11.5003,36.5322 L19.1673,36.5322 L19.1673,44.1992 L44.2003,44.1992 L44.2003,7.6662 L25.0333,7.6662 L25.0333,0.0002 L15.3333,0.0002 Z M21.2003,42.1662 L42.1663,42.1662 L42.1663,9.6992 L21.2003,9.6992 L21.2003,42.1662 Z" id="Fill-4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

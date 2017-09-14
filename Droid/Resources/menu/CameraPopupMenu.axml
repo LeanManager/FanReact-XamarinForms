@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id = "@+id/CameraPopupCamera"
+        android:title = "Take Photo"/>
+	<item android:id = "@+id/CameraPopupPhotoLib"
+        android:title = "Choose Picture"/>
+	<item android:id = "@+id/CameraPopupVideoCamera"
+        android:title = "Take Video"/>
+	<item android:id = "@+id/CameraPopupVideoLib"
+		android:title="Choose Video"/>
+	<item android:id = "@+id/PasteLink"
+		android:title="Paste Link" />
+
+</menu>

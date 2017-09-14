@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--<ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:padding="@dimen/padding_medium_large" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:background="@color/white">
+        <!-- Hype indicator bar -->
+            <LinearLayout
+                android:id="@+id/llHypeIndicatorBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/Upward_heating_up"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ivHypeIndicatorBarIcon"
+                    android:layout_width="13dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:id="@+id/tvHypeIndicatorBarDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="@string/hype_indicator_heating_up_descrption" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvPostTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:text="Title goes here" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="@color/background_gray">
+                    <ImageView
+                        android:id="@+id/ivOpAvatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/UpwardPostPictureBackground" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <XamSvg.SvgImageView
+                            app:svg="res:profile_light_grey.svg"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp" />
+                        <Space
+                            style="@style/space_width_5" />
+                        <TextView
+                            android:id="@+id/tvOpHandle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Upward_darkBlue"
+                            android:textSize="12sp"
+                            android:text="\@kmeyers" />
+                    </LinearLayout>
+                    <Space
+                        style="@style/space_height_5" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ivOpAvatar"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <XamSvg.SvgImageView
+                            app:svg="res:clock_light_grey.svg"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp" />
+                        <Space
+                            style="@style/space_width_5" />
+                        <TextView
+                            android:id="@+id/tvPostTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="1d" />
+                        <Space
+                            style="@style/space_width_20" />
+                        <ImageView
+                            android:id="@+id/ivStatisticsHypeIcon"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp" />
+                        <Space
+                            style="@style/space_width_5" />
+                        <TextView
+                            android:id="@+id/tvHypeScore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="36" />
+                        <Space
+                            style="@style/space_width_20" />
+                        <XamSvg.SvgImageView
+                            app:svg="res:comments_light_grey.svg"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp" />
+                        <Space
+                            style="@style/space_width_5" />
+                        <TextView
+                            android:id="@+id/tvCommentCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="3" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rlPostContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/item_link_preview" />
+                <FrameLayout
+                    android:id="@+id/flMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ivPostImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true" />
+                    <FrameLayout
+                        android:id="@+id/flVideoOverlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/black_60_percent">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@android:drawable/ic_media_play" />
+                    </FrameLayout>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/tvPostText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvCategoryBoards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category_boards"
+                style="@style/PostCategory" />
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvBoards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.v4.widget.NestedScrollView>
+            <TextView
+                android:id="@+id/tvCategoryReactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category_reactions"
+                style="@style/PostCategory" />
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvReactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+        <XamSvg.SvgImageView
+            android:id="@+id/fabComment"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:elevation="4dp"
+            app:svg="res:react_btn.svg" />
+    </FrameLayout>
+</RelativeLayout>

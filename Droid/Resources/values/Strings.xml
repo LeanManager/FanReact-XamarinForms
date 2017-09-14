@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="hello">Hello World, Click Me!</string>
+    <string name="app_name">FanReact.Droid</string>
+    <string name="home_feed_fragment_title">Reactions</string>
+    <string name="trending_fragment_title">Trending</string>
+    <string name="boards_fragment_title">Boards</string>
+    <string name="notificaitons_fragment_title">Notifications</string>
+    <string name="AppFont">Overpass_Regular.ttf</string>
+
+    <!--Login page -->
+    <string name="login_to">Login to</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="sign_up_prompt">Sign up for an account</string>
+    <string name="forgot_password_prompt">Forgot your password?</string>
+    <string name="login_loadingFrag_title">Verifying login information</string>
+    <string name="login_loadingFrag_message">This may take a few moments</string>
+    <string name="login_errorFrag_title">Error</string>
+
+    <string name="reset_password">Reset Password</string>
+    <string name="resetting_password">Resetting Password</string>
+    <string name="invalid_email">Please enter a valid email address</string>
+    <string name="reset_password_success">We\'ve just sent you an email to reset your password.</string>
+
+    <!--Signup page	-->
+    <string name="signup_with">Sign Up with</string>
+    <string name="username_hint">Username</string>
+    <string name="firstname_hint">First Name</string>
+    <string name="lastname_hint">Last Name</string>
+    <string name="terms_and_conditions_message">I have read and agree to the Terms and Conditions</string>
+    <string name="signup_btn">Sign Up</string>
+    <string name="signup_loadingFrag_title">Creating account</string>
+    <string name="signup_loadingFrag_message">This may take a few moments</string>
+    <string name="signup_errorFrag_title">Error</string>
+    <string name="show">SHOW</string>
+    <string name="hide">HIDE</string>
+
+    <!--Loading dialog defaults	-->
+    <string name="loadingFrag_defaultTitle">Please wait</string>
+    <string name="loadingFrag_defaultMessage">This may take a few moments</string>
+
+    <!--Create post fragment	-->
+    <string name="menu_item_post">POST</string>
+    <string name="creating_post">Creating post</string>
+    <string name="posting_comment">Posting comment</string>
+
+    <!--	Edit ProfilePage-->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="description">Description</string>
+    <string name="name">Name</string>
+    <string name="newPassword">New password</string>
+    <string name="currentPassword">Current password</string>
+    <string name="editProfileImage">Change profile Image</string>
+    <string name="editProfile_loadingFrag_title">Validating changes</string>
+    <string name="editProfile_loadingFrag_message">This may take a few moments</string>
+    <string name="editProfile_errorFrag_title">Error</string>
+    <string name="snackbar_profile_saved">Profile saved!</string>
+	<string name="firstName_caps">FIRST NAME</string>
+	<string name="lastName_caps">LAST NAME</string>
+    <string name="fullname">FULL NAME</string>
+	<string name="username_caps">USERNAME</string>
+	<string name="email_caps">EMAIL</string>
+    <string name="phone">PHONE</string>
+    <string name="zip_code">ZIP CODE</string>
+    <string name="city">CITY</string>
+    <string name="state">STATE</string>
+    <string name="country">COUNTRY</string>
+    <string name="address">ADDRESS</string>
+	<string name="shortBio">SHORT BIO</string>
+    <string name="add_address_line">Add Address Line 2</string>
+
+	<!--Error messages	-->
+	<string name="error_uploading_image">An error occurred while uploading the image</string>
+	<string name="error_getting_profile">An error occurred while getting this profile</string>
+
+    <!--Miscellaneous	-->
+    <string name="add_to_board">Add to board</string>
+
+    <string name="search_hint">Search&#8230;</string>
+
+    <string name="register">Register</string>
+
+    <string name="create_account">Create account</string>
+    <string name="already_have_account">Already have an account?</string>
+
+    <string name="contact_us">Contact us</string>
+
+    <string name="favorites">favorites</string>
+    <string name="more">more</string>
+    <string name="edit">Edit</string>
+
+    <string name="preferences">Preferences</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="delete">Delete</string>
+
+    <string name="team">Team</string>
+    <string name="athlete">Athlete</string>
+
+    <string name="next">Next</string>
+    <string name="email">Email</string>
+    <string name="message">Message</string>
+    <string name="notification">Notification</string>
+    <string name="send">Send</string>
+
+    <string name="format_in_parenthesis">(%1$s)</string>
+
+    <string name="finish">Finish</string>
+
+    <!--Share modal -->
+    <string name="share_modal_title">Share this Post</string>
+    <string name="copy">Copy</string>
+    <string name="upward">Upward</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="link_copied">Link Copied</string>
+
+    <!--Internal browser SSL error handling	-->
+    <string name="ssl_error_dialog_title">SSL Certificate Error</string>
+    <string name="continue_anyway_prompt">Do you want to continue anyway?</string>
+    <string name="cert_not_yet_valid">"The certificate is not yet valid.</string>
+    <string name="cert_hostname_mismatch">The certificate indicates hostname mismatch.</string>
+    <string name="cert_expired">The certificate has expired.</string>
+    <string name="cert_authority_not_trusted">The certificate authority is not trusted.</string>
+
+	<!--Constants	-->
+	<string name="extra_uwProfileType">uwProfileType</string>
+	<string name="extra_uwProfileId">uwProfileId</string>
+
+    <!--UPWARD	-->
+    <string name="posted_this_to">\u0020posted this to</string>
+    <string name="posted_to">Posted to:\u0020</string>
+
+    <!--Boards and profiles	-->
+    <string name="private_profile">Private Profile</string>
+    <string name="private_profile_message">You must be a fan of this user to see their feed. \nAdd them as a fan to get updates, messages and more!</string>
+	<string name="changing_profile_picture">Changing profile picture</string>
+	<string name="changing_header_image">Changing header image</string>
+
+    <!--Board intro view	-->
+    <string name="hype_score">hype Score</string>
+    <string name="fans_of">fans of</string>
+    <string name="fans">fans</string>
+
+    <!--board quick action strings-->
+    <string name="about">About</string>
+    <string name="my_boards">My boards</string>
+    <string name="boards_managed">Boards managed</string>
+    <string name="contact_wizard">Contact wizard</string>
+    <string name="member_directory">Member directory</string>
+    <string name="resources">Resources</string>
+    <string name="tools">Tools</string>
+    <string name="invite">Invite</string>
+    <string name="my_athletes">My athletes</string>
+    <string name="my_teams">My teams</string>
+    <string name="my_programs">My programs</string>
+    <string name="my_schedule">My schedule</string>
+
+    <!--Program registration	-->
+    <string name="open_soon">Open soon</string>
+    <string name="programs_registering_now">Programs registering now</string>
+    <string name="upcoming_programs">Upcoming programs</string>
+	<string name="view_all_programs">View all programs</string>
+
+    <string name="fan">Fan</string>
+
+	<!--Program board league information	-->
+	<string name="league_information">League Information</string>
+	<string name="costs">Costs</string>
+	<string name="practices_begin">Practices begin</string>
+	<string name="week_of">Week of</string>
+	<string name="evaluations_begin">Evaluations begin</string>
+	<string name="first_game">First game</string>
+
+    <!--Post menu strings	-->
+    <string name="format_unfollow">Unfollow %1$s</string>
+    <string name="format_follow">Follow %1$s</string>
+    <string name="unfollow">Unfollow</string>
+
+
+    <!--Report post page	-->
+    <string name="report_this_post">Report this Post</string>
+    <string name="report_post_message">Help us understand why you\'re reporting this post.</string>
+
+    <string name="select_a_reason">Select a reason</string>
+    <string name="report_reason_1">It\'s inappropriate</string>
+    <string name="report_reason_2">It contains racist or derogatory statements</string>
+    <string name="report_reason_3">It\'s spam</string>
+    <string name="report_describe_the_issue">Describe the issue (optional)</string>
+
+    <!--Create post	-->
+    <string name="u_createpost_title_hint">Give this a compelling title...</string>
+    <string name="u_add_image_label">Add featured image</string>
+    <string name="u_remove_featured_image_label">Remove featured image</string>
+	<string name="u_remove_link">Remove link</string>
+    <string name="u_creatpost_commentary_hint">Add your commentary...</string>
+
+    <string name="add_to_board_subhead">Boards</string>
+    <string name="error_no_boards_added">You must select at least one board</string>
+    <string name="error_too_many_boards">You have reached the maximum number of boards. Please remove one or more of the selected boards and try again.</string>
+
+	<!--Paste link dialog	-->
+	<string name="attach_link">Attach a Link</string>
+	<string name="preview">Preview</string>
+	<string name="add_link">Add Link</string>
+
+    <!--navigation drawer -->
+    <string name="non_auth_header_title">Get Started with Upward Sports</string>
+    <string name="non_auth_header_subtitle">Sign up today!</string>
+
+    <string name="find_a_league">Find a Place to Play</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="donate">Donate</string>
+
+    <string name="about_upward">About Upward</string>
+    <string name="contact_us">Contact us</string>
+    <string name="get_involved">Get involved</string>
+
+
+    <!--Edit profile	-->
+    <string name="save_section">Save Section</string>
+    <string name="oldPassword">Old password</string>
+	<string name="reset_password">Reset Password</string>
+    <!--Partner		-->
+    <string name="main_contact">Main Contact</string>
+    <string name="church_information">Church Information</string>
+    <string name="worship_times">Worship Times</string>
+    <string name="label_denomination">DENOMINATION (Optional)</string>
+    <string name="label_church_size">CHURCH SIZE (Optional)</string>
+    <string name="label_add_a_day">Add a day</string>
+    <!--Parent		-->
+    <string name="add_family_member">Add Family Member</string>
+    <string name="family_members">Family Members</string>
+    <string name="required_family_members">Required Family Members</string>
+    <string name="required_family_members_intro">These family members have been connected to you based on program registration and cannot be removed. However, you can edit their privacy settings.</string>
+    <string name="relationship">Relationship</string>
+    <string name="church_hint">CHURCH (Optional)</string>
+    <string name="occupation_hint">OCCUPATION (Optional)</string>
+    <string name="favorite_teams">Favorite Teams</string>
+    <string name="favorite_athletes">Favorite Athletes</string>
+    <string name="add_team">Add team</string>
+    <string name="add_athlete">Add athlete</string>
+
+	<string name="saving_changes">Saving changes</string>
+
+    <!-- Post -->
+    <string name="category_boards">Posted To&#8230;</string>
+    <string name="category_reactions">Best Reactions</string>
+    <string name="hype_indicator_heating_up_descrption">This post is heating up</string>
+    <string name="hype_indicator_on_fire_descrption">This post is on fire</string>
+
+    <!--Contact Wizard	-->
+    <string name="type">Type</string>
+    <string name="recipients">Recipients</string>
+    <string name="write">Write</string>
+    <string name="Success">Success</string>
+    <!--Type -->
+    <string name="cw_type_intro">I want to send a:</string>
+    <!--Recipients -->
+    <string name="format_sending_message_to">I want to send a %1$s to %2$s people</string>
+    <!--Write -->
+    <string name="format_sending_message_to_2">You are sending a %1$s to %2$s people: </string>
+    <string name="sending_message">Sending message</string>
+    <string name="error_no_file_picker">No file picker app found</string>
+    <string name="error_grabbing_file">An error occurred while getting the file. Please try again</string>
+    <string name="error_processing_file">An error occurred while processing the file. Please try again</string>
+    <!--Success-->
+    <string name="format_message_sent_to">Your %1$s was successfully sent to %2$s people!</string>
+
+    <!--About profile - partner	-->
+    <string name="overview">Overview</string>
+    <string name="church_information">Church Information</string>
+    <string name="church_main_contact">Church Main Contact</string>
+    <string name="denomination">Denomination</string>
+    <string name="church_size">Church Size</string>
+    <string name="worship_times">Worship Times</string>
+
+	<!--About profile - normal	-->
+	<string name="extra_information">Extra Information</string>
+	<string name="church">Church</string>
+	<string name="occupation">Occupation</string>
+
+	<!--About profile - parent -->
+	<string name="family">Family</string>
+	<string name="children">Children</string>
+
+	<!--Edit profile - partner -->
+	<string name="churchName_caps">CHURCH NAME</string>
+	<string name="churchSize_caps">CHURCH SIZE</string>
+	<string name="denomination_caps">DENOMINATION</string>
+</resources>

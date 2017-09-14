@@ -1,0 +1,19 @@
+
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Web---HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Board---Program---Schedule" transform="translate(-921.000000, -1039.000000)" fill="#999999">
+            <g id="Secondary-Column" transform="translate(910.000000, 297.000000)">
+                <g id="Submenu" transform="translate(0.000000, 547.000000)">
+                    <g id="Invite" transform="translate(0.000000, 184.000000)">
+                        <g id="Invite-Icon">
+                            <g id="Icons/I/Invite/Medium/Grey" transform="translate(11.000000, 11.000000)">
+                                <polygon id="Fill-1" points="17 9 13 9 13 5 11 5 11 9 7 9 7 11 11 11 11 15 13 15 13 11 17 11"></polygon>
+                                <path d="M11.9995,7.10542736e-15 L-3.01980663e-13,7.446 L-3.01980663e-13,24 L24,24 L24,7.446 L11.9995,7.10542736e-15 Z M1.99991667,11.33 L1.99991667,8.566 L11.9995,2.362 L21.9990834,8.566 L21.9990834,11.33 L11.9995,17.535 L1.99991667,11.33 Z M21.9990834,13.692 L21.9990834,21.999 L1.99991667,21.999 L1.99991667,13.692 L11.9995,19.896 L21.9990834,13.692 Z" id="Fill-2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

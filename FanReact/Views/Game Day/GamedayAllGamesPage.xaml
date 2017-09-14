@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:uw="clr-namespace:FanReact;assembly=FanReact" 
+    x:Class="FanReact.GamedayAllGamesPage">
+
+    <ContentPage.ToolbarItems>
+       <ToolbarItem x:Name="saveToolbarButton" 
+                    Text="Add Game" 
+                    IsEnabled="true" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+
+        <ListView
+            x:Name="lvGames"
+            VerticalOptions="Fill"
+            HorizontalOptions="FillAndExpand"
+            BackgroundColor="Silver">
+
+            <ListView.Header>
+                <StackLayout
+                    x:Name="slGameNotes"
+                    Padding="8"
+                    Orientation="Horizontal">
+
+                    <Image
+                        x:Name="gamenotesIcon"/>
+
+                    <Label
+                        Text="Game Notes"/>
+
+                    <Image
+                        x:Name="imArrowRight"/>
+
+                </StackLayout>
+            </ListView.Header>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="8"
+                            BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="4*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Image
+                                x:Name="imCheck"
+                            Grid.Row="0" Grid.Column="0"/>
+
+                            <Label
+                                x:Name="lbGameWeek"
+                            Grid.Row="0" Grid.Column="1"/>
+
+                            <Image
+                                x:Name="imArrowRight"
+                            Grid.Row="0" Grid.Column="2"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+                
+            
+        </ListView>
+        
+    </ContentPage.Content>
+</ContentPage>

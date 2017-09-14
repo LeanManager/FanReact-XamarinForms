@@ -1,0 +1,20 @@
+
+<svg width="24px" height="32px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="iOS-Device-App---Admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Registration-(Online)---Anonymous" transform="translate(-22.000000, -472.000000)" fill="#999999">
+            <g id="Content-Header" transform="translate(0.000000, 64.000000)">
+                <g id="League-Contact" transform="translate(22.000000, 410.000000)">
+                    <g id="icon">
+                        <g id="Icons/C/Contact/Medium/Grey">
+                            <g id="contact-icon" transform="translate(4.000000, 0.000000)">
+                                <path d="M0,24 L16,24 L16,0.001 L0,0.001 L0,24 Z M2,22 L14,22 L14,2 L2,2 L2,22 Z" id="Fill-1"></path>
+                                <path d="M9.9999,19.0002 C9.9999,20.1042 9.1039,21.0002 7.9999,21.0002 C6.8959,21.0002 5.9999,20.1042 5.9999,19.0002 C5.9999,17.8962 6.8959,17.0002 7.9999,17.0002 C9.1039,17.0002 9.9999,17.8962 9.9999,19.0002 Z" id="Fill-2"></path>
+                                <polygon id="Fill-4" points="4 16 12 16 12 4 4 4"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

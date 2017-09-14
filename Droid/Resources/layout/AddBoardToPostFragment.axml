@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:hint="@string/search_hint"
+        android:background="@android:color/white"
+        android:padding="@dimen/padding_minor"
+        android:singleLine="true"
+        android:imeOptions="actionSearch" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/add_to_board_subhead"
+        android:padding="@dimen/padding_medium"
+        style="@style/UpwardNormalCapital" />
+    <FrameLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/addBoardRecyclerview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+        <ProgressBar
+            android:id="@+id/pbSearchBoards"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/tvNoResults"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="No search results found. Please try again"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+    </FrameLayout>
+</LinearLayout>

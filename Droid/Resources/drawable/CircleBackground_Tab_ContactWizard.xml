@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <solid
+        android:color="@android:color/white" />
+    <stroke
+        android:width="4dp"
+        android:color="@color/Upward_darkBlue" />
+    <size
+        android:width="@dimen/contact_wizard_tab_height"
+        android:height="@dimen/contact_wizard_tab_height" />
+</shape>

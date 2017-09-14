@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <!--<android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary">
+            <RelativeLayout
+                app:layout_collapseMode="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/boadActivityBackgroundImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="center"
+                    android:src="@drawable/gillettestadiumin" />
+                <LinearLayout
+                    android:id="@+id/boardActivityBannerView"
+                    android:layout_marginTop="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/boardActivityBoardIcon"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/defaultAvatarWhite" />
+                    <TextView
+                        android:id="@+id/boardActivityBoardFanCountTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="Board Fan count" />
+                    <Button
+                        android:id="@+id/boardActivityFollowButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/boardActivtyExtraButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/boardActivityBannerView"
+                    android:visibility="gone">
+                    <Button
+                        android:id="@+id/boardActivityExtraButton1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="10dp" />
+                    <Button
+                        android:id="@+id/boardActivityExtraButton2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/boardActivityExtraButton3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="1" />
+                    <Button
+                        android:id="@+id/boardActivityExtraButton4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/boardToolBar"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize">
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:id="@+id/boardActivityTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        style="@style/ActivityTitleText"
+                        android:text="Board Name" />
+                    <ImageButton
+                        android:id="@+id/boardActivityCreatePost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:paddingRight="10dp"
+                        android:background="@android:color/transparent" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/boardToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:layout_scrollFlags="enterAlways">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/boardActivityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    style="@style/ActivityTitleText"
+                    tools:text="Board Name" />
+                <ImageButton
+                    android:id="@+id/boardActivityCreatePost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:paddingRight="10dp"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:behavior_overlapTop="?android:attr/actionBarSize">
+    <!--<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                layout="@layout/LayoutBoardIntro" />
+            <LinearLayout
+                android:id="@+id/llProgramInfo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/board_intro_container"
+                style="@style/BoardIntroItem"
+                android:visibility="gone"
+                tools:visibility="visible">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding_medium"
+                    android:text="@string/league_information"
+                    android:textStyle="bold"
+                    android:textColor="@color/Upward_darkBlue"
+                    android:background="@color/Upward_grey_bg" />
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium_mid">
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/tvCostsLabel"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            style="@style/UpwardAbout.Category2"
+                            android:layout_marginBottom="@dimen/padding_minor"
+                            android:text="@string/costs" />
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCosts"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/tvCostsLabel" />
+                        <TextView
+                            android:id="@+id/tvPracticesBeginLabel"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20dp"
+                            style="@style/UpwardAbout.Category2"
+                            android:text="@string/practices_begin"
+                            android:layout_below="@+id/rvCosts" />
+                        <TextView
+                            android:id="@+id/tvWeekOfLabel"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            style="@style/UpwardAbout.Category2"
+                            android:text="@string/week_of"
+                            android:layout_marginBottom="@dimen/padding_minor"
+                            android:layout_below="@+id/tvPracticesBeginLabel" />
+                        <TextView
+                            android:id="@+id/tvPracticesBeginValue"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            style="@style/UpwardAbout.Text"
+                            android:layout_below="@+id/tvWeekOfLabel"
+                            tools:text="Aug. 15, 2017" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/tvEvaluationsBeginLabel"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            style="@style/UpwardAbout.Category2"
+                            android:text="@string/evaluations_begin"
+                            android:layout_marginBottom="@dimen/padding_minor"
+                            android:layout_below="@+id/tvPracticesBeginLabel" />
+                        <TextView
+                            android:id="@+id/tvEvaluationsBeginValue"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            style="@style/UpwardAbout.Text"
+                            android:layout_below="@+id/tvEvaluationsBeginLabel"
+                            tools:text="Aug. 15, 2017" />
+                        <TextView
+                            android:id="@+id/tvFirstGameLabel"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20dp"
+                            style="@style/UpwardAbout.Category2"
+                            android:text="@string/first_game"
+                            android:layout_marginBottom="@dimen/padding_minor"
+                            android:layout_below="@+id/tvEvaluationsBeginValue" />
+                        <TextView
+                            android:id="@+id/tvFirstGameValue"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            style="@style/UpwardAbout.Text"
+                            android:layout_below="@+id/tvFirstGameLabel"
+                            tools:text="Aug. 15, 2017" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <include
+                    layout="@layout/cell_separator" />
+                <LinearLayout
+                    android:id="@+id/llVolunteer"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_medium_mid">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/UpwardTextAppearance_BlueBoldCapital"
+                        android:text="@string/volunteer" />
+                    <XamSvg.SvgImageView
+                        app:svg="res:arrow_right_large.svg"
+                        android:layout_height="9sp"
+                        android:layout_width="6sp" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/rlRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="46sp"
+                    android:gravity="center_horizontal"
+                    android:background="@color/Upward_register_green"
+                    android:padding="@dimen/padding_medium_large">
+                    <TextView
+                        android:id="@+id/tvRegister"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        style="@style/UpwardTextAppearance_BlueBoldCapital"
+                        android:textColor="@color/white"
+                        android:text="@string/register"
+                        android:layout_marginEnd="@dimen/padding_minor"
+                        android:layout_centerVertical="true" />
+                    <ImageView
+                        android:id="@+id/ivRegisterArrow"
+                        android:layout_height="9sp"
+                        android:layout_width="9sp"
+                        android:scaleType="fitCenter"
+                        android:layout_toEndOf="@+id/tvRegister"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <android.support.v4.widget.NestedScrollView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/llProgramInfo">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/postRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="vertical" />
+            </android.support.v4.widget.NestedScrollView>
+            <RelativeLayout
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:visibility="visible">
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    <!--        </android.support.v4.widget.SwipeRefreshLayout>-->
+    </ScrollView>
+<!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:behavior_overlapTop="10dp">
+
+            <include
+                layout="@layout/LayoutPostRecyclerView" />
+     </LinearLayout>-->
+    <RelativeLayout
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="6dp"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

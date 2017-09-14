@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/post_menu_container"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/custom_button_height">
+<!-- <ImageView
+        android:id="@+id/post_menu_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_post_menu"
+        android:paddingEnd="@dimen/padding_post_menu" />-->
+    <ImageView
+        android:id="@+id/post_menu_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/padding_post_menu"
+        android:layout_marginEnd="@dimen/padding_post_menu" />
+<!--    <ImageView
+        android:id="@+id/post_menu_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_post_menu"
+        android:paddingEnd="@dimen/padding_post_menu" />-->
+    <ImageView
+        android:id="@+id/post_menu_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/padding_post_menu"
+        android:layout_marginEnd="@dimen/padding_post_menu" />
+</LinearLayout>

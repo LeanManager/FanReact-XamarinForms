@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quickaction_panel"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/quickaction_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+    <!--<ImageView
+            android:id="@+id/quickaction_about_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            tools:src="@android:drawable/ic_lock_lock" />-->
+        <RelativeLayout
+            android:id="@+id/quickaction_about_icon"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/quickaction_about_title"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/quickaction_about_icon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:text="@string/about" />
+        <ImageView
+            android:id="@+id/quickaction_about_caret"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/quickaction_parent_panel"
+		android:visibility="gone">
+
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:id="@+id/quickaction_parent_my_athletes"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+	        android:gravity="center_vertical"
+	        android:padding="8dp">
+	        <RelativeLayout
+	            android:id="@+id/quickaction_parent_my_athletes_icon"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:paddingEnd="@dimen/padding_medium"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentStart="true" />
+	        <TextView
+	            android:id="@+id/quickaction_parent_my_athletes_title"
+	            android:layout_height="match_parent"
+	            android:layout_width="0dp"
+	            android:layout_weight="4"
+	            android:gravity="center_vertical"
+	            android:layout_alignParentTop="true"
+	            android:layout_toEndOf="@+id/quickaction_parent_my_athletes_icon"
+	            style="@style/UpwardTextAppearance_BlueBoldCapital"
+	            android:text="@string/my_athletes" />
+	        <ImageView
+	            android:id="@+id/quickaction_parent_my_athletes_caret"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentEnd="true"
+	            tools:src="@android:drawable/ic_lock_lock" />
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:id="@+id/quickaction_parent_my_teams"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+	        android:gravity="center_vertical"
+	        android:padding="8dp">
+	        <RelativeLayout
+	            android:id="@+id/quickaction_parent_my_teams_icon"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:paddingEnd="@dimen/padding_medium"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentStart="true" />
+	        <TextView
+	            android:id="@+id/quickaction_parent_my_teams_title"
+	            android:layout_height="match_parent"
+	            android:layout_width="0dp"
+	            android:layout_weight="4"
+	            android:gravity="center_vertical"
+	            android:layout_alignParentTop="true"
+	            android:layout_toEndOf="@+id/quickaction_parent_my_teams_icon"
+	            style="@style/UpwardTextAppearance_BlueBoldCapital"
+	            android:text="@string/my_teams" />
+	        <ImageView
+	            android:id="@+id/quickaction_parent_my_teams_caret"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentEnd="true"
+	            tools:src="@android:drawable/ic_lock_lock" />
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:id="@+id/quickaction_parent_my_programs"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+	        android:gravity="center_vertical"
+	        android:padding="8dp">
+	        <RelativeLayout
+	            android:id="@+id/quickaction_parent_my_programs_icon"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:paddingEnd="@dimen/padding_medium"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentStart="true" />
+	        <TextView
+	            android:id="@+id/quickaction_parent_my_programs_title"
+	            android:layout_height="match_parent"
+	            android:layout_width="0dp"
+	            android:layout_weight="4"
+	            android:gravity="center_vertical"
+	            android:layout_alignParentTop="true"
+	            android:layout_toEndOf="@+id/quickaction_parent_my_programs_icon"
+	            style="@style/UpwardTextAppearance_BlueBoldCapital"
+	            android:text="@string/my_programs" />
+	        <ImageView
+	            android:id="@+id/quickaction_parent_my_programs_caret"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentEnd="true"
+	            tools:src="@android:drawable/ic_lock_lock" />
+	    </LinearLayout>
+
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:id="@+id/quickaction_parent_my_schedule"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+	        android:gravity="center_vertical"
+	        android:padding="8dp">
+	        <RelativeLayout
+	            android:id="@+id/quickaction_parent_my_schedule_icon"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:paddingEnd="@dimen/padding_medium"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentStart="true" />
+	        <TextView
+	            android:id="@+id/quickaction_parent_my_schedule_title"
+	            android:layout_height="match_parent"
+	            android:layout_width="0dp"
+	            android:layout_weight="4"
+	            android:gravity="center_vertical"
+	            android:layout_alignParentTop="true"
+	            android:layout_toEndOf="@+id/quickaction_parent_my_schedule_icon"
+	            style="@style/UpwardTextAppearance_BlueBoldCapital"
+	            android:text="@string/my_schedule" />
+	        <ImageView
+	            android:id="@+id/quickaction_parent_my_schedule_caret"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentEnd="true"
+	            tools:src="@android:drawable/ic_lock_lock" />
+	    </LinearLayout>
+		
+	</LinearLayout>
+	
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/quickaction_my_boards"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+    <!--  <ImageView
+            android:id="@+id/quickaction_my_boards_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            tools:src="@android:drawable/ic_lock_lock" />-->
+        <RelativeLayout
+            android:id="@+id/quickaction_my_boards_icon"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/quickaction_my_boards_title"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/quickaction_my_boards_icon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:text="@string/my_boards" />
+        <ImageView
+            android:id="@+id/quickaction_my_boards_caret"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/quickaction_boards_managed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+    <!--<ImageView
+            android:id="@+id/quickaction_boards_managed_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            tools:src="@android:drawable/ic_lock_lock" />-->
+        <RelativeLayout
+            android:id="@+id/quickaction_boards_managed_icon"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/quickaction_boards_managed_title"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/quickaction_boards_managed_icon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:text="@string/boards_managed" />
+        <ImageView
+            android:id="@+id/quickaction_boards_managed_caret"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/quickaction_contact_wizard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+    <!--<ImageView
+            android:id="@+id/quickaction_contact_wizard_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            tools:src="@android:drawable/ic_lock_lock" />-->
+        <RelativeLayout
+            android:id="@+id/quickaction_contact_wizard_icon"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/quickaction_contact_wizard_title"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/quickaction_contact_wizard_icon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:text="@string/contact_wizard" />
+        <ImageView
+            android:id="@+id/quickaction_contact_wizard_caret"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/quickaction_member_directory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+    <!--<ImageView
+            android:id="@+id/quickaction_member_directory_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            tools:src="@android:drawable/ic_lock_lock" />-->
+        <RelativeLayout
+            android:id="@+id/quickaction_member_directory_icon"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/quickaction_member_directory_title"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/quickaction_member_directory_icon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:text="@string/member_directory" />
+        <ImageView
+            android:id="@+id/quickaction_member_directory_caret"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+	
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/quickaction_resources"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+    <!--<ImageView
+            android:id="@+id/quickaction_resources_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            tools:src="@android:drawable/ic_lock_lock" />-->
+        <RelativeLayout
+            android:id="@+id/quickaction_resources_icon"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/quickaction_resources_title"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/quickaction_resources_icon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:text="@string/resources" />
+        <ImageView
+            android:id="@+id/quickaction_resources_caret"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/quickaction_tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+    <!--<ImageView
+            android:id="@+id/quickaction_tools_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingEnd="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            tools:src="@android:drawable/ic_lock_lock" />-->
+        <RelativeLayout
+            android:id="@+id/quickaction_tools_icon"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/quickaction_tools_title"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/quickaction_tools_icon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:text="@string/tools" />
+        <ImageView
+            android:id="@+id/quickaction_tools_caret"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/quickaction_invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/upward_board_intro_quickaction_item"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+        <RelativeLayout
+            android:id="@+id/quickaction_invite_icon"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/padding_medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/quickaction_invite_title"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/quickaction_invite_icon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:text="@string/invite" />
+        <ImageView
+            android:id="@+id/quickaction_invite_caret"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+</LinearLayout>

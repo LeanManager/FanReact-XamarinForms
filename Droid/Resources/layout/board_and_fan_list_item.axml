@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/bafContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/bafCellImageViewAsync"
+            android:layout_height="match_parent"
+            android:layout_width="50dp"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/bafCellTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_vertical" />
+        <Button
+            android:id="@+id/bafFavoriteButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bafContentLayout">
+        <include
+            layout="@layout/cell_separator" />
+    </RelativeLayout>
+</RelativeLayout>

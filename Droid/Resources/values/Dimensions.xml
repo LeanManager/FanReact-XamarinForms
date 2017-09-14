@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <dimen name="padding_post_menu">5dp</dimen>
+    <dimen name="padding_statistics_item">8dp</dimen>
+    <dimen name="size_hype_bar">1dp</dimen>
+
+    <dimen name="padding_icon_to_text">4dp</dimen>
+    <dimen name="margin_bottom_boardintro">8dp</dimen>
+
+    <dimen name="padding_report">8dp</dimen>
+
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_minor">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_medium_mid">12dp</dimen>
+    <dimen name="padding_medium_large">16dp</dimen>
+    <dimen name="padding_major">32dp</dimen>
+
+    <item name="icon_size_multiplier" type="fraction">100%</item>
+
+    <dimen name="custom_button_height">24sp</dimen>
+    <dimen name="large_button_height">40sp</dimen>
+
+    <dimen name="circle_background_small_width">8dp</dimen>
+    <dimen name="circle_image_height">40dp</dimen>
+    <dimen name="intro_view_image_height">100dp</dimen>
+
+    <!--UPWARD	-->
+    <dimen name="upward_board_intro_quickaction_item">40sp</dimen>
+    <dimen name="upward_board_intro_quickaction_icon_size">12dp</dimen>
+    <integer name="upward_toolbar_logo_size">120</integer>
+
+
+    <dimen name="upward_board_intro_quickfact_icon_size">30sp</dimen>
+    <dimen name="upward_board_intro_link_height">24sp</dimen>
+
+    <dimen name="textsize_editprofile_subheaders">16sp</dimen>
+
+    <dimen name="share_modal_icon_height">64dp</dimen>
+    <dimen name="share_item_imageview_length">35dp</dimen>
+
+
+    <dimen name="contact_wizard_tab_height">38dp</dimen>
+    <dimen name="contact_wizard_type_height">96dp</dimen>
+</resources>

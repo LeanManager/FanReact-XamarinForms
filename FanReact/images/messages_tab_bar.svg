@@ -1,0 +1,21 @@
+
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footers/Footer/Mobile/Default" transform="translate(-138.000000, -25.000000)" fill="#444444">
+            <g id="Footer">
+                <g id="Messaging" transform="translate(100.000000, 14.000000)">
+                    <g id="Icons/M/Messaging/Medium/Dark" transform="translate(38.000000, 11.000000)">
+                        <g id="chat-icon">
+                            <path d="M0,0.0002 L24,0.0002 L24,18 L5,18 L0,23.0002 L0,0.0002 Z M1.9979248,2 L1.9979248,18.0908203 L4,16 L22,16 L22,2 L1.9979248,2 Z" id="Fill-1"></path>
+                            <g id="dots" transform="translate(5.000000, 7.000000)">
+                                <path d="M14,2 C14,3.10533333 13.1053333,4 12,4 C10.896,4 10,3.10533333 10,2 C10,0.894666667 10.896,0 12,0 C13.1053333,0 14,0.894666667 14,2" id="Fill-6"></path>
+                                <path d="M9,2 C9,3.10533333 8.10533333,4 7,4 C5.896,4 5,3.10533333 5,2 C5,0.894666667 5.896,0 7,0 C8.10533333,0 9,0.894666667 9,2" id="Fill-4"></path>
+                                <path d="M4,2 C4,3.10533333 3.10533333,4 2,4 C0.896,4 0,3.10533333 0,2 C0,0.894666667 0.896,0 2,0 C3.10533333,0 4,0.894666667 4,2" id="Fill-2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

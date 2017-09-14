@@ -1,0 +1,8 @@
+
+<svg width="21px" height="24px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/N/Notes/Medium/Grey" transform="translate(-1.000000, 0.000000)" fill="#999999">
+            <path d="M3,0.001 L3,5 L1,5 L1,7 L3,7 L3,11 L1,11 L1,13 L3,13 L3,17 L1,17 L1,19 L3,19 L3,24 L21.999635,24 L21.999635,0.001 L3,0.001 Z M10,5 L20,5 L20,2.001 L10,2.001 L10,5 Z M5,5 L8,5 L8,2.001 L5,2.001 L5,5 Z M10,22 L20,22 L20,7 L10,7 L10,22 Z M5,7 L8,7 L8,22.001 L5,22.001 L5,19 L7,19 L7,17 L5,17 L5,13 L7,13 L7,11 L5,11 L5,7 Z" id="notes-icon"></path>
+        </g>
+    </g>
+</svg>

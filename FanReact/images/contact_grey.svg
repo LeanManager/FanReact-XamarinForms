@@ -1,0 +1,23 @@
+
+<svg width="34px" height="28px" viewBox="0 0 34 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Web---HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home---Messaging" transform="translate(-655.000000, -790.000000)" fill="#444444">
+            <g id="Secondary-Column" transform="translate(640.000000, 66.000000)">
+                <g id="More" transform="translate(0.000000, 594.000000)">
+                    <g id="Row" transform="translate(0.000000, 112.000000)">
+                        <g id="Contact">
+                            <g id="Contact-Icon">
+                                <g id="Contact-art" transform="translate(15.000000, 18.000000)">
+                                    <path d="M0,0.0001 L0,28.0001 L5,24.0001 L34,24.0001 L34,0.0001 L0,0.0001 Z M2,2.0001 L32,2.0001 L32,22.0001 L4.298,22.0001 L2,23.8391 L2,2.0001 Z" id="Fill-1"></path>
+                                    <polygon id="Fill-2" points="6 8 28 8 28 6 6 6"></polygon>
+                                    <polygon id="Fill-3" points="6 16 15.605 16 15.605 14 6 14"></polygon>
+                                    <polygon id="Fill-4" points="6 12 28 12 28 10 6 10"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

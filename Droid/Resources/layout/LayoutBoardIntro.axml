@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/board_intro_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/BoardIntroItem"
+    android:clipChildren="false">
+	<ImageView
+        android:id="@+id/boadActivityBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gillettestadiumin" />
+    <LinearLayout
+		android:id="@+id/boardDescriptionContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/boadActivityBackgroundImage">
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+			android:background="@color/Upward_grey_bg"
+			android:layout_marginTop="-20dp">
+            <include
+                layout="@layout/board_quickfacts" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+			android:background="@android:color/white">
+            <include
+                layout="@layout/board_description" />
+        </FrameLayout>
+    </LinearLayout>
+	<FrameLayout
+		android:id="@+id/cell_separator"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/boardDescriptionContainer">
+		<include layout="@layout/cell_separator"/>
+	</FrameLayout>
+	<android.support.v7.widget.RecyclerView
+        android:id="@+id/board_quickactions_recyclerview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+		android:layout_below="@+id/cell_separator" />
+</RelativeLayout>

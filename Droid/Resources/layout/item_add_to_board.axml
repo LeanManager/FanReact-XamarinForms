@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addBoardItemContainer"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    android:padding="@dimen/padding_minor">
+    <FrameLayout
+        android:layout_height="@dimen/circle_image_height"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/addBoardItemImage"
+            android:layout_height="@dimen/circle_image_height"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside" />
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:src="@drawable/CircleBackground_Small" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/addBoardItemName"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="4" />
+    <RelativeLayout
+        android:id="@+id/addBoardItemAddButton"
+        android:layout_height="@dimen/custom_button_height"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium">
+        <TextView
+            android:id="@+id/addBoardButtonIcon"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:drawableStart="@drawable/fab_add"
+            android:drawableTint="@color/Upward_darkBlue"
+            android:paddingEnd="@dimen/padding_icon_to_text" />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/addBoardButtonIcon"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:text="@string/add_to_board" />
+    </RelativeLayout>
+    <xamsvg.SvgImageView
+        android:id="@+id/removeBoardButton"
+        app:svg="res:close_white.svg"
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="center_vertical|end"
+        android:visibility="gone" />
+</LinearLayout>

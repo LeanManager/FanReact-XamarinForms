@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FanReact.GamedayCoinTossPage">
+	<ContentPage.Content>
+        <StackLayout Padding="8">
+            <Grid
+                BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout
+                    Grid.Row="0" Grid.Column="0">
+                    <Label Text="GAME DATE" FontSize="Micro" TextColor="Silver"/>
+                    <Label x:Name="lbGameDate"/>
+                    <Label x:Name="lbGameTime"/>
+                </StackLayout>
+
+                <StackLayout
+                    Grid.Row="0" Grid.Column="1">
+                    <Label Text="GAME FORMAT" FontSize="Micro" TextColor="Silver"/>
+                    <Label x:Name="lbGameFormat"/>
+                </StackLayout>
+            </Grid>
+
+            <Label Text="Coin Flip" HorizontalOptions="Center" FontSize="Large" TextColor="Maroon" FontAttributes="Bold"/>
+            <Label Text="Is your team starting on offense or defense?" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            <Grid
+                BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    Grid.Row="0" Grid.Column="0">
+
+                    <Label
+                        Text="OFFENSE"
+                        TextColor="Navy"
+                        FontAttributes="Bold"
+                        FontSize="Micro"/>
+
+                    <Image
+                        x:Name="imArrowRightO"/>
+                    
+                </StackLayout>
+
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    Grid.Row="0" Grid.Column="1">
+
+                    <Label
+                        Text="DEFENSE"
+                        TextColor="Navy"
+                        FontAttributes="Bold"
+                        FontSize="Micro"/>
+
+                    <Image
+                        x:Name="imArrowRightD"/>
+                    
+                </StackLayout>
+
+            </Grid>
+            
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

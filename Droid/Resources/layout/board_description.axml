@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boardDescriptionItem"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:theme="@style/UpwardTextTheme">
+    <TextView
+        android:id="@+id/boardTitle"
+        style="@style/UpwardBoardTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:text="Cypress Trails UMC"
+        android:layout_marginBottom="8dp" />
+    <TextView
+        android:id="@+id/boardProfileHandle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
+        tools:text="comeatme_bro" />
+    <LinearLayout
+        android:id="@+id/streetAddressContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+        <ImageView
+            android:id="@+id/streetAddressIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/padding_icon_to_text"
+            tools:src="@android:drawable/ic_dialog_info" />
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:theme="@style/UpwardTextAppearance_BlueBold">
+            <TextView
+                android:id="@+id/boardStreetAddressTextview"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                tools:text="22801 Streeterson Streetson" />
+            <TextView
+                android:id="@+id/boardCityWithZipTextview"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/boardStreetAddressTextview"
+                tools:text="Cityson, SS 55son" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_height="@dimen/large_button_height"
+        android:layout_width="match_parent"
+        android:background="@color/Upward_darkBlue">
+        <RelativeLayout
+            android:id="@+id/boardActionButton_colorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_tiny">
+            <RelativeLayout
+                android:id="@+id/boardActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium">
+                <RelativeLayout
+                    android:id="@+id/boardActionButton_icon"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/padding_medium" />
+                <TextView
+                    android:id="@+id/boardActionButton_text"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_toEndOf="@+id/boardActionButton_icon"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:layout_marginTop="@dimen/padding_medium_large"
+        android:layout_marginBottom="@dimen/padding_medium_large">
+    <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/padding_icon_to_text"
+            tools:src="@android:drawable/ic_dialog_info" />-->
+        <RelativeLayout
+            android:id="@+id/boardCityIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/padding_icon_to_text"
+            android:paddingTop="@dimen/padding_minor" />
+        <TextView
+            android:id="@+id/boardCityTextview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/UpwardTextAppearance_GreyBoldCapital"
+            tools:text="Cityson, SS 55son" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/boardDescriptionTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_medium" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/boardLinksRecyclerView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+</LinearLayout>

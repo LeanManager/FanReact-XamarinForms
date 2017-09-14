@@ -1,0 +1,439 @@
+<resources>
+    <style name="FanReactTheme" parent="Base.FanReactTheme">
+        <item name="fontPath">Overpass_Regular.ttf</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="UpwardSports_Theme" parent="Base.FanReactTheme">
+        <item name="fontPath">Overpass_Regular.ttf</item>
+        <item name="colorPrimary">@color/Upward_darkBlue</item>
+        <item name="colorPrimaryDark">@color/Upward_darkBlue</item>
+        <item name="colorAccent">@color/Upward_darkBlue</item>
+    </style>
+
+    <style name="FanReactTheme.Splash" parent="Base.FanReactTheme">
+        <item name="android:windowBackground">@layout/Splash</item>
+    </style>
+
+    <style name="Base.FanReactTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionModeBackground">@color/primary</item>
+        <item name="actionModeBackground">@color/primary</item>
+    </style>
+
+    <style name="FRTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/primaryDark</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabTextAppearance">@style/FRTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/primaryDark</item>
+        <item name="tabPaddingStart">24dp</item>
+        <item name="tabPaddingEnd">24dp</item>
+    </style>
+
+    <style name="TransparentToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="FRTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuButtonsStyle">
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_shadowColor">#444</item>
+        <item name="fab_colorNormal">@color/primary</item>
+        <item name="fab_colorPressed">@color/primaryDark</item>
+        <item name="fab_colorRipple">#072644</item>
+        <item name="menu_colorNormal">@color/primary</item>
+        <item name="menu_colorPressed">@color/primaryDark</item>
+        <item name="menu_colorRipple">#072644</item>
+    </style>
+
+    <style name="MenuButtonsSmall">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">@color/primary</item>
+        <item name="fab_colorPressed">@color/primaryDark</item>
+        <item name="fab_colorRipple">#072644</item>
+    </style>
+
+    <style name="MenuButtonsSmall.Accent">
+        <item name="fab_colorNormal">@color/accent</item>
+        <item name="fab_colorPressed">#D6A033</item>
+        <item name="fab_colorRipple">#BE8E2D</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/grow</item>
+        <item name="android:windowExitAnimation">@anim/hide_to_bottom</item>
+    </style>
+
+    <style name="Widget.AppCompat.Button.Colored.Blue" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="colorButtonNormal">@color/primary</item>
+    </style>
+
+    <style name="Widget">
+    </style>
+
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+    <style name="TitleText" parent="DefaultText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ActivityTitleText" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+    </style>
+
+    <style name="DefaultText">
+        <item name="android:fontFamily">Overpass</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="FullScreenVideoDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:padding">0dp</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="SubtitleText" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="LoginPage_Base">
+        <!--<item name="android:background">@drawable/UpwardLoginBackgroundImage</item>-->
+    </style>
+
+    <style name="LoginPage" parent="@style/LoginPage_Base">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+    </style>
+
+    <style name="LoginBannerText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">@dimen/padding_medium_large</item>
+    </style>
+
+    <style name="SignupTopBar">
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="LoginEdittext">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+    </style>
+
+    <style name="EditProfileEdittext">
+
+    </style>
+
+    <style name="EditProfileTextInputLayout">
+        <item name="android:paddingTop">@dimen/padding_medium</item>
+        <item name="android:paddingBottom">@dimen/padding_medium</item>
+        <item name="android:layout_marginTop">@dimen/padding_medium</item>
+        <item name="android:layout_marginBottom">@dimen/padding_medium</item>
+        <!--		<item name="android:background">@android:color/white</item>-->
+    </style>
+
+    <style name="SignupBarButtons" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@drawable/BorderlessButtonTextColor</item>
+    </style>
+
+    <style name="TransparentButton" parent="@style/Widget.AppCompat.Button.Borderless" />
+    <style name="TransparentButton_WhiteText" parent="TransparentButton">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TransparentButton_WhiteText_AllCaps" parent="TransparentButton_WhiteText">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TransparentButton_MutedText" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/button_muted_grey</item>
+    </style>
+
+    <style name="WhiteButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@android:color/white</item>
+    </style>
+
+    <style name="MutedText">
+        <item name="android:textColor">@color/button_muted_grey</item>
+    </style>
+
+    <style name="TextInputLayout_TextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="LoginTextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+    </style>
+
+    <style name="EditProfileTextInputLayout" parent="@style/LoginTextInputLayout">
+        <item name="android:textColorHint">@android:color/black</item>
+    </style>
+
+    <style name="NotificationGreenButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/button_green</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="NotificationRedButton" parent="@style/NotificationGreenButton">
+        <item name="colorButtonNormal">@color/button_red</item>
+    </style>
+
+    <style name="FullScreenTransparentDialogTheme" parent="@style/FanReactTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:padding">0dp</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DialogAnimation_FromAndToBottom">
+        <item name="android:windowEnterAnimation">@anim/enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/exit_to_bottom</item>
+    </style>
+
+    <!--UPWARD	-->
+    <style name="UpwardSports_Theme.Splash" parent="@style/UpwardSports_Theme">
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DarkStatusBarIcons" parent="@style/Base.FanReactTheme" />
+
+    <style name="Upward_GrayToolbar_Theme" parent="UpwardSports_Theme">
+        <item name="colorPrimary">@color/Upward_light_gray</item>
+        <item name="colorPrimaryDark">@color/Upward_light_gray</item>
+        <item name="colorAccent">@color/Upward_darkBlue</item>
+        <item name="android:actionMenuTextColor">@color/Upward_darkBlue</item>
+    </style>
+
+    <style name="UpwardTextTheme">
+        <item name="android:textColor">@color/Upward_text_normal</item>
+    </style>
+
+    <style name="UpwardNormalCapital" parent="@style/UpwardTextTheme">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--blue text	-->
+    <style name="UpwardBlueText">
+        <item name="android:textColor">@color/Upward_darkBlue</item>
+    </style>
+
+    <style name="UpwardTextAppearance_BlueBold" parent="@style/UpwardBlueText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="UpwardTextAppearance_BlueBoldCapital" parent="@style/UpwardTextAppearance_BlueBold">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="UpwardTextAppearance_BlueBold_Small" parent="@style/UpwardTextAppearance_BlueBold">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="UpwardBoardTitle" parent="@style/UpwardTextAppearance_BlueBold">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--grey text   -->
+    <style name="UpwardGrayText">
+        <item name="android:textColor">@color/Upward_dark_grey</item>
+    </style>
+
+    <style name="UpwardTextAppearance_GrayText_Small" parent="@style/UpwardGrayText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="UpwardTextAppearance_GreyBoldCapital">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/Upward_dark_grey</item>
+    </style>
+
+    <!--board intro	-->
+    <style name="BoardIntroItem">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_boardintro</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="UpwardBlueButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/Upward_darkBlue</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BoardActionButtonSelected" parent="@style/UpwardBlueButton">
+        <item name="colorButtonNormal">@color/Upward_darkBlue</item>
+    </style>
+
+    <style name="BoardActionButton" parent="@style/Widget.AppCompat.Button">
+        <item name="colorControlHighlight">@color/Upward_darkBlue</item>
+    </style>
+
+    <style name="BoardQuickfactsPanel">
+        <item name="android:background">@color/Upward_grey_bg</item>
+    </style>
+
+    <style name="BoardQuickFactsLabel" parent="UpwardTextAppearance_GreyBoldCapital">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Upward About Profile -->
+    <style name="UpwardAbout" />
+    <style name="UpwardAbout.Title">
+        <item name="android:background">@color/Upward_grey_bg</item>
+        <item name="android:textColor">@color/Upward_text_normal</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="UpwardAbout.Category1">
+        <item name="android:textColor">@color/Upward_red</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="UpwardAbout.Category2">
+        <item name="android:textColor">@color/Upward_dark_grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="UpwardAbout.Text">
+        <item name="android:textColor">@color/Upward_text_normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="UpwardAbout.Text.Link">
+        <item name="android:textColor">@color/Upward_text_link</item>
+    </style>
+
+    <!--boards	-->
+    <style name="register_button" parent="@style/BoardActionButtonSelected">
+        <item name="colorButtonNormal">@color/Upward_register_green</item>
+        <item name="android:background">@color/Upward_register_green</item>
+    </style>
+
+    <style name="register_button_disabled" parent="@style/register_button">
+        <item name="android:background">@color/Upward_register_disabled_green</item>
+    </style>
+
+    <!--create post -->
+    <style name="u_edittext">
+        <item name="android:textColorHint">@color/Upward_light_gray</item>
+        <item name="android:textColor">@color/Upward_text_normal</item>
+        <item name="android:gravity">start</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">36dp</item>
+    </style>
+
+    <style name="u_edittext_large_text" parent="u_edittext">
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="u_title_remaining">
+        <item name="android:background">@color/Upward_dark_grey</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">@dimen/padding_minor</item>
+    </style>
+
+
+    <!-- Post -->
+    <style name="PostCategory">
+        <item name="android:background">@color/background_gray</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/medium_gray</item>
+        <item name="android:textSize">12sp</item>
+
+    </style>
+
+    <!-- Spaces -->
+    <style name="space_width_5">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="space_width_20">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+
+    <style name="space_height_5">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <!--share modal -->
+    <style name="upward_share_item">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="upward_share_item_icon">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="upward_share_item_label">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/Upward_text_normal</item>
+    </style>
+
+    <!--contact wizard	-->
+    <style name="contact_wizard_type_normal">
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

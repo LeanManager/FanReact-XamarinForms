@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:padding="@dimen/padding_medium_large"
+	android:background="@color/Upward_grey_bg">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/cw_type_intro"
+		android:paddingBottom="@dimen/padding_medium_large"/>
+	
+    <LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:paddingBottom="@dimen/padding_medium">
+		<FrameLayout
+			android:id="@+id/flTypeEmail"
+			android:layout_height="@dimen/contact_wizard_type_height"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			style="@style/contact_wizard_type_normal">
+			<ImageView
+				android:id="@+id/ivBackgroundEmail"
+				android:layout_height="@dimen/contact_wizard_type_height"
+				android:layout_width="@dimen/contact_wizard_type_height"
+				android:layout_gravity="center"/>
+			<ImageView
+				android:id="@+id/ivTypeEmail"
+				android:layout_height="@dimen/contact_wizard_tab_height"
+				android:layout_width="@dimen/contact_wizard_tab_height"
+				android:layout_gravity="center"
+				android:scaleType="fitCenter"/>
+		</FrameLayout>
+
+		<FrameLayout
+			android:id="@+id/flTypeSMS"
+			android:layout_height="@dimen/contact_wizard_type_height"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			style="@style/contact_wizard_type_normal">
+			<ImageView
+				android:id="@+id/ivBackgroundSMS"
+				android:layout_height="@dimen/contact_wizard_type_height"
+				android:layout_width="@dimen/contact_wizard_type_height"
+				android:layout_gravity="center"/>
+			<ImageView
+				android:id="@+id/ivTypeSMS"
+				android:layout_height="@dimen/contact_wizard_tab_height"
+				android:layout_width="@dimen/contact_wizard_tab_height"
+				android:layout_gravity="center"
+				android:scaleType="fitCenter"/>
+		</FrameLayout>
+
+		<FrameLayout
+			android:id="@+id/flTypeNotification"
+			android:layout_height="@dimen/contact_wizard_type_height"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			style="@style/contact_wizard_type_normal">
+			<ImageView
+				android:id="@+id/ivBackgroundNotification"
+				android:layout_height="@dimen/contact_wizard_type_height"
+				android:layout_width="@dimen/contact_wizard_type_height"
+				android:layout_gravity="center"/>
+			<ImageView
+				android:id="@+id/ivTypeNotification"
+				android:layout_height="@dimen/contact_wizard_tab_height"
+				android:layout_width="@dimen/contact_wizard_tab_height"
+				android:layout_gravity="center"
+				android:scaleType="fitCenter"/>
+		</FrameLayout>
+		
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/tvEmail"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:text="@string/email"
+			android:gravity="center"/>
+
+		<TextView
+			android:id="@+id/tvMessage"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:text="@string/message"
+			android:gravity="center"/>
+
+		<TextView
+			android:id="@+id/tvNotification"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:text="@string/notification"
+			android:gravity="center"/>
+		
+	</LinearLayout>
+	
+</LinearLayout>

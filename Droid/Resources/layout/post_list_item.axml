@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_marginTop="@dimen/padding_medium">
+    <LinearLayout
+        android:id="@+id/postListItem"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:elevation="4dp">
+        <FrameLayout
+            android:id="@+id/hype_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_hype_bar"
+            android:background="@color/Upward_hype_color"
+            android:visibility="gone" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/custom_button_height"
+            android:padding="@dimen/padding_medium"
+            android:gravity="center_vertical">
+            <FrameLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="5dp"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/postCellProfilePhotoImageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/UpwardPostPictureBackground" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/UpwardPostPictureBackground" />
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/posted_to"
+                    style="@style/UpwardTextAppearance_GrayText_Small"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/posted_to"
+                    tools:text=" posted this to" />
+                <TextView
+                    style="@style/UpwardTextAppearance_BlueBoldCapital"
+                    android:id="@+id/postCellBoardName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/posted_to"
+                    tools:text="BoardName" />
+            </RelativeLayout>
+            <include
+                layout="@layout/PostMenuLayout" />
+        </LinearLayout>
+        <include
+            layout="@layout/cell_separator" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/mediaContentContainer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="@dimen/padding_minor"
+                android:background="@drawable/UpwardPostPictureBackground"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical">
+                <FrameLayout
+                    android:id="@+id/videoContainer"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <WebView
+                        android:id="@+id/postCellPostWebView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <ImageButton
+                        android:id="@+id/fullscreenButton"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp"
+                        android:layout_gravity="top|end"
+                        android:padding="4dp"
+                        style="@style/Widget.AppCompat.Button" />
+                </FrameLayout>
+                <ImageView
+                    android:id="@+id/postCellPostImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+        <!--<TextView
+                style="@style/TitleText"
+                android:id="@+id/postCellTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/mediaContentContainer"
+                tools:text="Photos from last week's 15U game"/>-->
+            <TextView
+                android:id="@+id/postCellDescription"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="55dp"
+                android:padding="@dimen/padding_minor"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/mediaContentContainer"
+                tools:text="Should I be here?" />
+            <LinearLayout
+                android:id="@+id/postHandleContainer"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/UpwardTextAppearance_BlueBold_Small"
+                android:layout_above="@+id/statisticsView"
+                android:layout_toEndOf="@+id/mediaContentContainer"
+                android:layout_below="@+id/postCellDescription"
+                android:padding="@dimen/padding_minor">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/postCellHandleIcon"
+                    android:paddingEnd="@dimen/padding_minor" />
+                <TextView
+                    style="@style/UpwardTextAppearance_BlueBold_Small"
+                    android:id="@+id/postCellHandle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Handle" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_minor"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/postHandleContainer"
+                android:layout_toEndOf="@+id/mediaContentContainer">
+                <include
+                    layout="@layout/StatisticsLayout" />
+            </RelativeLayout>
+        </RelativeLayout>
+    <!--<TextView
+            android:id="@+id/postCellDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:text="Should I be here?"
+            android:background="@android:color/white"
+            android:visibility="gone"/>-->
+        <TextView
+            style="@style/TitleText"
+            android:id="@+id/postCellTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/mediaContentContainer"
+            tools:text="Photos from last week's 15U game"
+            android:visibility="gone" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/postCellAddReaction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="Add Reaction..." />
+            <ImageButton
+                android:id="@+id/postCellUpVote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text=""
+                android:background="@null"
+                android:drawableTint="@color/UpVote" />
+            <TextView
+                android:id="@+id/voteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="100" />
+            <ImageButton
+                android:id="@+id/postCellDownVote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:tint="@color/DownVote" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llLinkInformation"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/Upward_grey_bg"
+            android:padding="@dimen/padding_medium"
+            android:visibility="gone">
+            <XamSvg.SvgImageView
+                android:layout_height="@dimen/padding_medium_mid"
+                android:layout_width="@dimen/padding_medium_mid"
+                app:svg="res:link_light_grey_small.svg"
+                android:layout_marginEnd="@dimen/padding_medium" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tvLinkTitle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/Upward_dark_grey" />
+                <TextView
+                    android:id="@+id/tvLinkDomain"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/Upward_darkBlue"
+                    android:layout_below="@+id/tvLinkTitle" />
+            </RelativeLayout>
+            <XamSvg.SvgImageView
+                android:layout_height="@dimen/padding_medium"
+                android:layout_width="@dimen/padding_medium"
+                app:svg="res:arrow_right_small.svg"
+                android:layout_marginEnd="@dimen/padding_medium"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <include
+            layout="@layout/cell_separator" />
+    </LinearLayout>
+</RelativeLayout>

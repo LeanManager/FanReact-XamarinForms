@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_medium_mid"
+    android:background="@color/Upward_EditProfile_background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!--For full partner name   -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profileFullName_textinputlayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/churchName_caps"
+            android:visibility="gone"
+            style="@style/EditProfileTextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tetProfileFullName"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+        </android.support.design.widget.TextInputLayout>
+    <!--For person first and last names, not shown in partner    -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profileFirstName_textinputlayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/firstName_caps"
+            style="@style/EditProfileTextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tetProfileFirstName"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/profileLastName_textinputlayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/lastName_caps"
+            style="@style/EditProfileTextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tetProfileLastName"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Common area -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/username_caps"
+            style="@style/EditProfileTextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileHandle_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Only in parent/person  -->
+        <LinearLayout
+            android:id="@+id/userLocation_LinLay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/address"
+                style="@style/EditProfileTextInputLayout">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/streetAddress_EditText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/zip_code"
+                style="@style/EditProfileTextInputLayout">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/zipcode_EditText"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/city"
+                    style="@style/EditProfileTextInputLayout">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/city_EditText"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="@string/state"
+                    style="@style/EditProfileTextInputLayout">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/state_EditText"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/country"
+                style="@style/EditProfileTextInputLayout">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/country_EditText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="@string/phone"
+                style="@style/EditProfileTextInputLayout">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/phone_EditText"
+                    android:inputType="phone"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLength="13"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/email_address_hint"
+                style="@style/EditProfileTextInputLayout">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/emailaddress_EditText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preferred contact method"
+                    android:paddingLeft="@dimen/padding_minor"
+                    android:paddingRight="@dimen/padding_minor" />
+                <Spinner
+                    android:id="@+id/preferredContactMethod_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    <!--In both -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/partnerShortBio_Textinputlayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/shortBio"
+            style="@style/EditProfileTextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/profileShortBio_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:imeOptions="actionNext" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Only in partner    -->
+        <LinearLayout
+            android:id="@+id/partnerInformation_LinLay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/partnerWebsite_Textinputlayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="PARTNER WEBSITE (optional)"
+                style="@style/EditProfileTextInputLayout">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/partnerWebsite_EditText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="FACEBOOK (optional)"
+            style="@style/EditProfileTextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/facebook_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="TWITTER (optional)"
+            style="@style/EditProfileTextInputLayout">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/twitter_EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:imeOptions="actionNext" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Only visible for parent/person    -->
+        <LinearLayout
+            android:id="@+id/userDemographics_LinLay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GENDER"
+                    android:paddingLeft="@dimen/padding_minor"
+                    android:paddingRight="@dimen/padding_minor" />
+                <Spinner
+                    android:id="@+id/userGender_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="BIRTHDAY"
+                style="@style/EditProfileTextInputLayout"
+                android:focusable="false">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/selectBirthday_EditText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="none"
+                    android:textIsSelectable="false"
+                    android:focusable="false" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

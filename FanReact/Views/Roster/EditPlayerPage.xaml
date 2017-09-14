@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="FanReact.EditPlayerPage">
+
+    <Grid Padding="5,20,5,10">
+        <!-- 13 rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="45" />
+        </Grid.RowDefinitions>
+
+        <!-- 3 columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Edit Player" TextColor="DarkBlue" VerticalTextAlignment="Center" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center"
+               VerticalOptions="Fill" BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="30"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+        
+        <Button Text="  X" TextColor="Black" BackgroundColor="White" BorderRadius="0" FontAttributes="Bold"
+                Grid.Row="0" Grid.Column="0"
+                WidthRequest="20" HorizontalOptions="StartAndExpand"
+                Clicked="OnDismissClicked"/>
+
+        <Label Text="FULL NAME" FontSize="Micro" FontAttributes="Bold" VerticalTextAlignment="End"
+               Grid.Row="1" Grid.Column="0"/>
+
+        <Entry Placeholder="{Binding PlayerName}" IsEnabled="false" FontSize="Small"
+               Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Label Text="Names cannot be edited" FontSize="Micro" TextColor="Gray"
+               Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" />
+
+        <Label Text="RANK" FontSize="Micro" FontAttributes="Bold" VerticalTextAlignment="End"
+               Grid.Row="4" Grid.Column="0" />
+
+        <Entry Placeholder="{Binding Rank}" IsEnabled="false" FontSize="Small"
+               WidthRequest="60" HorizontalOptions="Start"
+               Grid.Row="5" Grid.Column="0"/>
+
+        <Label Text="Edit a player's rank from the roster" FontSize="Micro" TextColor="Gray" 
+               Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <Label Text="JERSEY NO." FontSize="Micro" FontAttributes="Bold" 
+               VerticalTextAlignment="End" HeightRequest="15"
+               Grid.Row="7" Grid.Column="0"/>
+
+        <Entry Placeholder="{Binding JerseyNumber}" FontSize="Small" PlaceholderColor="Black"
+               WidthRequest="60" HorizontalOptions="Start"
+               Grid.Row="8" Grid.Column="0"/>
+
+        <Button Text="Assign Star                                                                    >" 
+                FontSize="Small" TextColor="Black" BackgroundColor="White" HorizontalOptions="Fill"
+                Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <!-- upward star image icon -->
+
+        <Label Text="PLAYER NOTES" FontSize="Micro" FontAttributes="Bold" VerticalTextAlignment="End"
+               Grid.Row="10" Grid.Column="0"/>
+
+        <Editor x:Name="editableNotes" Text="{Binding Notes}" FontSize="Small" HeightRequest="80" Keyboard="Default"
+                TextChanged="OnNotesChanged" Completed="OnNotesCompleted"
+                Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <!-- Placeholder="{Binding Notes}"  Custom Renderer -->
+
+        <Button Text="SAVE PLAYER >" FontSize="Micro" TextColor="White" FontAttributes="Bold"
+                BackgroundColor="DarkBlue" BorderRadius="0"
+                Grid.Row="12" Grid.Column="2"
+                Clicked="OnSavePlayerClicked"/>
+        
+    </Grid>
+</ContentPage>

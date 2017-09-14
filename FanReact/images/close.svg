@@ -1,0 +1,17 @@
+
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Web---HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home---Quick-Post---Img-Attached" transform="translate(-110.000000, -214.000000)">
+            <g id="Primary-Column" transform="translate(20.000000, 66.000000)">
+                <g id="Quick-Post">
+                    <g id="Photo" transform="translate(10.000000, 150.000000)">
+                        <g id="Delete" transform="translate(82.000000, 0.000000)">
+                            <circle id="Oval" fill="#035688" cx="12" cy="12" r="12"></circle>
+                            <polygon id="close" fill="#FFFFFF" points="15.4376229 8.22857143 12.34368 11.3233371 9.24891429 8.22857143 8.22857143 9.24726857 11.3233371 12.3420343 8.22857143 15.4376229 9.24891429 16.4571429 12.34368 13.3623771 15.4376229 16.4571429 16.4571429 15.4376229 13.3623771 12.3420343 16.4571429 9.24726857"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

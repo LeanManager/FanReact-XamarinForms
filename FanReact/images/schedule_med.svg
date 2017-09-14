@@ -1,0 +1,11 @@
+
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/S/Schedule/Medium/Grey" transform="translate(0.000000, 1.000000)" fill="#999999">
+            <g id="Calendar-icon">
+                <polygon id="Fill-1" points="16 20.005 20 20.005 20 16.001 16 16.001"></polygon>
+                <path d="M14.9995,-0.0002 L14.9995,3.0008 L8.9995,3.0008 L8.9995,-0.0002 L6.9995,-0.0002 L6.9995,3.0008 L0.0005,3.0008 L0.0005,23.9998 L23.9995,23.9998 L23.9995,4.9998 L23.9995,3.0008 L17.0005,3.0008 L17.0005,-0.0002 L14.9995,-0.0002 Z M17.0005,10.0008 L17.0005,6.9998 L21.9995,6.9998 L21.9995,21.9998 L1.9995,21.9998 L1.9995,6.9998 L6.9995,6.9998 L6.9995,10.0008 L8.9995,10.0008 L8.9995,6.9998 L14.9995,6.9998 L14.9995,10.0008 L17.0005,10.0008 Z" id="Fill-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quick-Post" transform="translate(-13.000000, -11.000000)" fill="#444444">
+            <g id="QP-Header">
+                <g>
+                    <g id="QP-Text">
+                        <g id="QP-Icon">
+                            <g id="Quick-Post-Icon" transform="translate(13.000000, 11.000000)">
+                                <polygon id="Fill-1" points="12.4006 8.7955 10.8016 7.1985 12.4016 5.5985 14.0006 7.1965"></polygon>
+                                <polygon id="Fill-2" points="10.0042 7.9987 11.6012 9.5957 7.5992 13.5977 6.0002 13.5987 6.0002 11.9997"></polygon>
+                                <path d="M0,0 L0,23.9997 L5,20.0007 L20,20.0007 L20,0 L0,0 Z M2,2.0007 L18,2.0007 L18,17.9997 L4.298,17.9997 L2,19.8397 L2,2.0007 Z" id="Fill-4"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

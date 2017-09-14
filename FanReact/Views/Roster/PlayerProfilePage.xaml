@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:FanReact;assembly=FanReact"
+             x:Class="FanReact.PlayerProfilePage"
+             Title="Player Profile">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="editButton" 
+                     Text="Edit"
+                     Clicked="OnToolbarEditClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+
+        <!-- 10 rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="17" />
+            <RowDefinition Height="90" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+
+        <!-- 8 columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+	    <Label Text="{Binding PlayerName}" TextColor="White" FontAttributes="Bold" FontSize="Large"
+               BackgroundColor="Olive"
+               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="8" />
+
+        <Label Text="    RANK" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" 
+               VerticalTextAlignment="End"
+               Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <Label Text="JERSEY NO." TextColor="Gray" FontSize="Micro" FontAttributes="Bold" VerticalTextAlignment="End"
+               Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2"/>
+
+        <Label Text="{Binding Rank}" HorizontalTextAlignment="Center"
+               Grid.Row="2" Grid.Column="0"/>
+
+        <Label Text="{Binding JerseyNumber}"
+               Grid.Row="2" Grid.Column="4"/>
+
+        <!-- 8 star.svg objects ; create style for cleaner code -->
+        <Image Source="{local:ImageResource FanReact.images.redstar.png}" Aspect="AspectFit" 
+               Grid.Row="3" Grid.Column="0" />
+        <Image Source="{local:ImageResource FanReact.images.redstar.png}" Aspect="AspectFit" 
+               Grid.Row="3" Grid.Column="1" />
+        <Image Source="{local:ImageResource FanReact.images.redstar.png}" Aspect="AspectFit" 
+               Grid.Row="3" Grid.Column="2" />
+        <Image Source="{local:ImageResource FanReact.images.redstar.png}" Aspect="AspectFit" 
+               Grid.Row="3" Grid.Column="3" />
+        <Image Source="{local:ImageResource FanReact.images.redstar.png}" Aspect="AspectFit" 
+               Grid.Row="3" Grid.Column="4" />
+        <Image Source="{local:ImageResource FanReact.images.redstar.png}" Aspect="AspectFit" 
+               Grid.Row="3" Grid.Column="5" />
+        <Image Source="{local:ImageResource FanReact.images.redstar.png}" Aspect="AspectFit" 
+               Grid.Row="3" Grid.Column="6" />
+        <Image Source="{local:ImageResource FanReact.images.redstar.png}" Aspect="AspectFit" 
+               Grid.Row="3" Grid.Column="7" />
+        <!-- 8 labels for the stars ; create style for cleaner code -->
+        <Label Text="1" TextColor="Gray" FontAttributes="Bold" FontSize="Micro"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4" Grid.Column="0" />
+        <Label Text="2" TextColor="Gray" FontAttributes="Bold" FontSize="Micro"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4" Grid.Column="1" />
+        <Label Text="3" TextColor="Gray" FontAttributes="Bold" FontSize="Micro"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4" Grid.Column="2" />
+        <Label Text="4" TextColor="Gray" FontAttributes="Bold" FontSize="Micro"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4" Grid.Column="3" />
+        <Label Text="5" TextColor="Gray" FontAttributes="Bold" FontSize="Micro"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4" Grid.Column="4" />
+        <Label Text="6" TextColor="Gray" FontAttributes="Bold" FontSize="Micro"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4" Grid.Column="5" />
+        <Label Text="7" TextColor="Gray" FontAttributes="Bold" FontSize="Micro"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4" Grid.Column="6" />
+        <Label Text="8" TextColor="Gray" FontAttributes="Bold" FontSize="Micro"
+               HorizontalTextAlignment="Center"
+               Grid.Row="4" Grid.Column="7" />
+
+        <Label Text="   PLAYER NOTES" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" VerticalTextAlignment="End"
+               Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Label Text="{Binding Notes}" FontSize="Small" Margin="10,0,10,0"
+               Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="8"/>
+
+        <Button Text="SEND NOTIFICATION TO GUARDIANS" FontSize="Micro" TextColor="DarkBlue" FontAttributes="Bold" VerticalOptions="Center"
+                BorderRadius="0" BorderColor="DarkBlue" BorderWidth="2"
+                Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="6"/>
+
+        <Label x:Name="grayLabel" HorizontalOptions="Fill" VerticalOptions="Fill"
+               Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="8"/>
+
+        <Button x:Name="exitButton" Text="EXIT USING COACH TOOLS                                       >" 
+                TextColor="White" FontAttributes="Bold" FontSize="Small" BorderRadius="0"
+                Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="8"
+                Clicked="OnExitClicked"/>
+                <!-- Tool icon image -->      
+    </Grid>
+    
+</ContentPage>

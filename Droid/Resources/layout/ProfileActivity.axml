@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <!--<android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary">
+            <RelativeLayout
+                app:layout_collapseMode="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/profileActivityBackgroundImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+                <LinearLayout
+                    android:id="@+id/profileActivityBannerView"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/profileActivityProfileImage"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/defaultAvatarWhite" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/profileActivityProfileHandleTextView"
+                            style="@style/TitleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Handle"
+                            android:textColor="@android:color/background_light" />
+                        <TextView
+                            android:id="@+id/profileActivityProfileNameTextView"
+                            style="@style/TitleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/background_light"
+                            android:text="Name" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/profileActivityFollowButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profileActivityStatsBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profileActivityBannerView"
+                    android:visibility="gone">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp">
+                        <Button
+                            android:id="@+id/profileActivityTeamsButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            android:text="0" />
+                        <TextView
+                            android:text="Teams"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="32dp"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp">
+                        <Button
+                            android:id="@+id/profileActivityFansButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            android:text="0" />
+                        <TextView
+                            android:text="Fans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="32dp"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp">
+                        <Button
+                            android:id="@+id/profileActivityFansOfButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            android:text="0" />
+                        <TextView
+                            android:text="Fans Of"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="32dp"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp">
+                        <Button
+                            android:id="@+id/profileActivityHypeScoreButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10dp"
+                            android:gravity="center"
+                            android:background="@android:color/transparent"
+                            android:text="0" />
+                        <TextView
+                            android:text="Hype Score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="32dp"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/profileActivityProfileDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profileActivityStatsBar"
+                    android:layout_marginLeft="10dp"
+                    android:text="description"
+                    android:textColor="@android:color/background_light"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/profileToolBar"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:id="@+id/profileActivityTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        style="@style/ActivityTitleText"
+                        android:text="Profile Handle" />
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/profileToolBar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/profileActivityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    style="@style/ActivityTitleText"
+                    android:text="Profile Handle" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/privateContent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:behavior_overlapTop="30dp">
+        <include
+            layout="@layout/LayoutPostRecyclerView" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="6dp"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

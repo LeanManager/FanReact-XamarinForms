@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/editProfile_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium_mid"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium_mid"
+            android:text="@string/edit_profile"
+            style="@style/UpwardTextAppearance_BlueBold"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include
+        layout="@layout/cell_separator" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/editProfileTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="#FFFFFF" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/editProfileViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/Upward_darkBlue"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/saveSection_button"
+            android:layout_height="46dp"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/saveSection_text"
+                style="@style/UpwardNormalCapital"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:text="@string/save_section"
+                android:paddingEnd="@dimen/padding_icon_to_text" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

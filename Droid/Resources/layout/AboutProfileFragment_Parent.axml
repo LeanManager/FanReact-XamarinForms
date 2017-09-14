@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            style="@style/UpwardAbout.Title"
+            android:text="@string/about" />
+        <TextView
+            android:id="@+id/tvShortBio"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/UpwardAbout.Text"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:text="Mother to Barron and Berkley. Go Texans and Astros!"
+            android:background="@android:color/white" />
+        <LinearLayout
+            android:id="@+id/llOverview"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/white">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                style="@style/UpwardAbout.Category1"
+                android:text="@string/overview" />
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text"
+                tools:text="12339 Longworth Ln.\nHouston, TX 77024" />
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text.Link"
+                android:autoLink="phone"
+                tools:text="(281)-353-2436" />
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Text.Link"
+                android:autoLink="email"
+                tools:text="kendraoquinn@gmail.com" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvProfileUrls"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/UpwardAbout.Category2"
+                android:text="Preferred Contact Method" />
+            <TextView
+                android:id="@+id/tvPreferredContactMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/UpwardAbout.Text"
+                tools:text="Email" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/UpwardAbout.Category2"
+                android:text="Gender" />
+            <TextView
+                android:id="@+id/tvGenderValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/UpwardAbout.Text"
+                tools:text="Female" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/UpwardAbout.Category2"
+                android:text="Birthday" />
+            <TextView
+                android:id="@+id/tvBirthdayValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/UpwardAbout.Text"
+                tools:text="Jan. 30" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llFamily"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/white"
+            android:visibility="gone">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Category1"
+                android:text="@string/family" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvOtherFamilyMembers"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/UpwardAbout.Category2"
+                android:text="@string/children" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvChildren"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llExtraInformation"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@android:color/white">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/UpwardAbout.Category1"
+                android:text="@string/extra_information" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/UpwardAbout.Category2"
+                android:text="@string/church" />
+            <TextView
+                android:id="@+id/tvChurchAttendedValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/UpwardAbout.Text"
+                android:text="-"
+                tools:text="Cypress Trails UMC" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/UpwardAbout.Category2"
+                android:text="@string/occupation" />
+            <TextView
+                android:id="@+id/tvOccupationValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/UpwardAbout.Text"
+                android:text="-"
+                tools:text="Stay at home weeaboo" />
+            <TextView
+                android:id="@+id/tvLabelFavoriteTeams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/UpwardAbout.Category2"
+                android:text="@string/favorite_teams" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFavoriteTeams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvLabelFavoriteAthletes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/UpwardAbout.Category2"
+                android:text="@string/favorite_athletes" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFavoriteAthletes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

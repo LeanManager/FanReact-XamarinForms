@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/quickactionItem"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_medium_mid">
+        <ImageView
+            android:id="@+id/quickaction_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingEnd="8dp"
+            tools:src="@android:drawable/ic_lock_lock" />
+        <TextView
+            android:id="@+id/quickaction_title"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            style="@style/UpwardTextAppearance_BlueBoldCapital"
+            tools:text="About" />
+        <XamSvg.SvgImageView
+            app:svg="res:arrow_right_large.svg"
+            android:layout_height="9sp"
+            android:layout_width="6sp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quickactionItem">
+        <include
+            layout="@layout/cell_separator" />
+    </FrameLayout>
+</RelativeLayout>

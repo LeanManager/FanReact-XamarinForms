@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <solid
+        android:color="#48b3ff" />
+    <size
+        android:width="@dimen/share_modal_icon_height"
+        android:height="@dimen/share_modal_icon_height" />
+</shape>
